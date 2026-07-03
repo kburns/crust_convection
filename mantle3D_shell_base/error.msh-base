@@ -1,0 +1,31 @@
+Currently Loaded Modulefiles:
+  1) slurm/20161123      2) anaconda3/2020.11
+Traceback (most recent call last):
+  File "/net/fs06/d0/dabdulah/GFD_PROJECT/mantle3D_shell_base/m3d_shell_base.py", line 110, in <module>
+    problem.add_equation("integ(rot_x@u) = 0")
+  File "/home/dabdulah/.conda/envs/dedalus-test/lib/python3.11/site-packages/dedalus/core/problems.py", line 89, in add_equation
+    self._build_matrix_expressions(eqn)
+  File "/home/dabdulah/.conda/envs/dedalus-test/lib/python3.11/site-packages/dedalus/core/problems.py", line 329, in _build_matrix_expressions
+    L = L.reinitialize(ncc=True, ncc_vars=vars)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dabdulah/.conda/envs/dedalus-test/lib/python3.11/site-packages/dedalus/core/operators.py", line 644, in reinitialize
+    operand = self.operand.reinitialize(**kw)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dabdulah/.conda/envs/dedalus-test/lib/python3.11/site-packages/dedalus/core/arithmetic.py", line 289, in reinitialize
+    return self.new_operands(arg0, arg1, **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dabdulah/.conda/envs/dedalus-test/lib/python3.11/site-packages/dedalus/core/arithmetic.py", line 658, in new_operands
+    return DotProduct(arg0, arg1, indices=self.indices, **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dabdulah/.conda/envs/dedalus-test/lib/python3.11/site-packages/dedalus/core/arithmetic.py", line 614, in __init__
+    self.domain = Domain(dist, self._build_bases(arg0, arg1, **kw))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dabdulah/.conda/envs/dedalus-test/lib/python3.11/site-packages/dedalus/core/arithmetic.py", line 281, in _build_bases
+    bases.append(b0 @ b1)
+                 ~~~^~~~
+  File "/home/dabdulah/.conda/envs/dedalus-test/lib/python3.11/site-packages/dedalus/core/basis.py", line 4280, in __matmul__
+    return other.__rmatmul__(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dabdulah/.conda/envs/dedalus-test/lib/python3.11/site-packages/dedalus/core/basis.py", line 4290, in __rmatmul__
+    raise ValueError("Azimuthal NCCs not yet supported.")
+ValueError: Azimuthal NCCs not yet supported.
