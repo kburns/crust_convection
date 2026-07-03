@@ -98,6 +98,7 @@ if not restart:
     T['g'] *= z * (Lz - z) # Damp noise at walls
     T['g'] += 1 - z/Lz # Add linear background
     C['g'] = 1
+    C['g'][..., -1] = 0
 else:
     file_handler_mode = 'append'
     write, initial_timestep = solver.load_state('checkpoints/checkpoints_s1.h5')
