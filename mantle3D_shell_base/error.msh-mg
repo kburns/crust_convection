@@ -1,0 +1,11 @@
+Currently Loaded Modulefiles:
+  1) slurm/20161123      2) anaconda3/2020.11
+Traceback (most recent call last):
+  File "/net/fs06/d0/dabdulah/GFD_PROJECT/crust_convection/mantle3D_shell_base/m3d_shell_momgauge.py", line 97, in <module>
+    problem.add_equation("integ(L[0]) = 0")  # phi component
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dabdulah/.conda/envs/dedalus-test/lib/python3.11/site-packages/dedalus/core/problems.py", line 72, in add_equation
+    LHS = eval(LHS_str, namespace)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<string>", line 1, in <module>
+TypeError: 'CrossProduct' object is not subscriptable

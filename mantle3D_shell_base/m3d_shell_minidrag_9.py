@@ -13,6 +13,7 @@ Le = 10
 h = 0
 E = 4
 γ = 1
+drag = 1e-9
 dealias = 3/2
 timestepper = d3.SBDF2
 max_timestep = 1e-2
@@ -91,7 +92,7 @@ problem.add_equation("dt(T) - div(grad_T) + lift(tau_T2) = - u@grad(T) + h*(1-C)
 # continent
 problem.add_equation("dt(C) - (1/Le)*div(grad_C) + lift(tau_C2) = - u@grad(C) + γ*(1-C)")
 # stokes momentum equation
-problem.add_equation("-div(grad_u) + grad(p) - (RaT*T - RaC*C)*er + lift(tau_u2) = 0") # this is 3 equations
+problem.add_equation("-div(grad_u) + grad(p) - (RaT*T - RaC*C)*er + lift(tau_u2) + drag*u = 0") # this is 3 equations
 
 # BC: convectively unstable
 problem.add_equation("T(r=Ri) = 1")
@@ -120,7 +121,7 @@ solver.stop_sim_time = stop_sim_time
 # Initial conditions
 if not restart:
     file_handler_mode = 'overwrite'
-    initial_timestep = 1e-5
+    initial_timestep = 1e-4
     T.fill_random('g', seed=42, distribution='normal', scale=1e-3) # Random noise
     T['g'] *= (r - Ri) * (Ro - r) # Damp noise at walls
     T['g'] += (Ri - Ri*Ro/r) / (Ri - Ro) # Add linear background
@@ -128,10 +129,10 @@ if not restart:
     C['g'][..., -1] = 0
 else:
     file_handler_mode = 'append'
-    write, initial_timestep = solver.load_state('checkpoints_ng/checkpoints_ng_s1.h5')
+    write, initial_timestep = solver.load_state('checkpoints_md9/checkpoints_md9_s1.h5')
 
 # Analysis
-snapshots = solver.evaluator.add_file_handler('snapshots_ng', iter=100, max_writes=10)
+snapshots = solver.evaluator.add_file_handler('snapshots_md9', iter=100, max_writes=10)
 snapshots.add_task(T, name='T')
 snapshots.add_task(C, name='C')
 #snapshots.add_task(ephi @ u, name='u_phi')
@@ -140,7 +141,7 @@ snapshots.add_task(u, name='u')
 snapshots.add_task(d3.curl(u), name='vorticity')
 
 # Horizontally averaged nonlinear diagnostics
-snapshots_nonlinear = solver.evaluator.add_file_handler('snapshots_nonlinear_ng', iter=10, max_writes=200)
+snapshots_nonlinear = solver.evaluator.add_file_handler('snapshots_nonlinear_md9', iter=10, max_writes=200)
 
 conv_flux = er @ (u*T)
 diff_flux = er @ (-grad_T)
@@ -150,11 +151,11 @@ snapshots_nonlinear.add_task(diff_flux, name='diffusive_heat_flux')
 snapshots_nonlinear.add_task(d3.Integrate((u@u)/2, coords), name='KE_int')
 
 # Checkpoints
-checkpoints = solver.evaluator.add_file_handler('checkpoints_ng', sim_dt=max_timestep*1000, max_writes=1, mode=file_handler_mode)
+checkpoints = solver.evaluator.add_file_handler('checkpoints_md9', sim_dt=max_timestep*1000, max_writes=1, mode=file_handler_mode)
 checkpoints.add_tasks(solver.state)
 
 # CFL
-CFL = d3.CFL(solver, initial_dt=max_timestep, cadence=1, safety=0.25, threshold=0.05,
+CFL = d3.CFL(solver, initial_dt=initial_timestep, cadence=1, safety=0.25, threshold=0.05,
              max_change=1.5, min_change=0.5, max_dt=max_timestep)
 CFL.add_velocity(u)
 

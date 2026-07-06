@@ -34,5 +34,5 @@ echo " "
 source activate dedalus-test
 
 #python3 m3d_xyperiodic_base.py
-#python3 m3d_xyperiodic_CRa22k_E8_gamma10.py
-python3 m3d_xyperiodic_E8_gamma10_nocontinents.py
+python3 m3d_xyperiodic_CRa22k_E8_gamma10.py
+#python3 m3d_xyperiodic_E8_gamma10_nocontinents.py

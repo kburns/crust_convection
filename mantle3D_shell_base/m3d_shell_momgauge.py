@@ -33,15 +33,13 @@ T = dist.Field(name='T', bases=shell)
 C = dist.Field(name='C', bases=shell)
 u = dist.VectorField(coords, name='u', bases=shell) # this is 3 unknowns
 tau_p  = dist.Field(name='tau_p')
-#tau_Lx = dist.Field(name='tau_Lx')
-#tau_Ly = dist.Field(name='tau_Ly')
-#tau_Lz = dist.Field(name='tau_Lz')
 tau_T1 = dist.Field(name='tau_T1', bases=sphere)
 tau_T2 = dist.Field(name='tau_T2', bases=sphere)
 tau_C1 = dist.Field(name='tau_C1', bases=sphere)
 tau_C2 = dist.Field(name='tau_C2', bases=sphere)
 tau_u1 = dist.VectorField(coords, name='tau_u1', bases=sphere) # this is 3 unknowns
 tau_u2 = dist.VectorField(coords, name='tau_u2', bases=sphere) # this is 3 unknowns
+tau_L = dist.VectorField(coords, name='tau_L') # Solid-body rotation gauge
 
 # Substitutions
 phi, theta, r = dist.local_grids(shell)
@@ -52,22 +50,9 @@ er['g'][2] = 1
 rvec = dist.VectorField(coords, bases=shell.radial_basis)
 rvec['g'][2] = r
 
-#rot_x = dist.VectorField(coords, name='rot_x', bases=shell)
-#rot_y = dist.VectorField(coords, name='rot_y', bases=shell)
-#rot_z = dist.VectorField(coords, name='rot_z', bases=shell)
-
-# component order is [phi, theta, r]
-#rot_x['g'][0] = -r * np.cos(theta) * np.cos(phi)   # phi component
-#rot_x['g'][1] = -r * np.sin(phi)                   # theta component
-#rot_x['g'][2] = 0                                  # radial component
-
-#rot_y['g'][0] = -r * np.cos(theta) * np.sin(phi)
-#rot_y['g'][1] =  r * np.cos(phi)
-#rot_y['g'][2] = 0
-
-#rot_z['g'][0] =  r * np.sin(theta)
-#rot_z['g'][1] = 0
-#rot_z['g'][2] = 0
+# Full shell radial vector for momentum/gauge terms
+rvec_shell = dist.VectorField(coords, bases=shell)
+rvec_shell['g'][2] = r
 
 lift_basis = shell.derivative_basis(1)
 lift = lambda A: d3.Lift(A, lift_basis, -1)
@@ -82,7 +67,7 @@ shear_stress_o = d3.angular(d3.radial(strain_rate(r=Ro), index=1))
 # Problem
 # First-order form: "div(f)" becomes "trace(grad_f)"
 # First-order form: "lap(f)" becomes "div(grad_f)"
-problem = d3.IVP([p, T, C, u, tau_p, tau_T1, tau_T2, tau_C1, tau_C2, tau_u1, tau_u2], namespace=locals())
+problem = d3.IVP([p, T, C, u, tau_p, tau_T1, tau_T2, tau_C1, tau_C2, tau_u1, tau_u2, tau_L], namespace=locals())
 
 # incompressible
 problem.add_equation("trace(grad_u) + tau_p = 0")
@@ -91,7 +76,7 @@ problem.add_equation("dt(T) - div(grad_T) + lift(tau_T2) = - u@grad(T) + h*(1-C)
 # continent
 problem.add_equation("dt(C) - (1/Le)*div(grad_C) + lift(tau_C2) = - u@grad(C) + γ*(1-C)")
 # stokes momentum equation
-problem.add_equation("-div(grad_u) + grad(p) - (RaT*T - RaC*C)*er + lift(tau_u2) = 0") # this is 3 equations
+problem.add_equation("-div(grad_u) + grad(p) - (RaT*T - RaC*C)*er + lift(tau_u2) + cross(rvec_shell, tau_L) = 0") # this is 3 equations
 
 # BC: convectively unstable
 problem.add_equation("T(r=Ri) = 1")
@@ -107,11 +92,13 @@ problem.add_equation("shear_stress_i = 0")
 problem.add_equation("shear_stress_o = 0")
 # BC: gauge conditions, no pressure or mean flow buildup
 problem.add_equation("integ(p) = 0")
-#problem.add_equation("integ(rot_x@u) = 0")
-#problem.add_equation("integ(rot_y@u) = 0")
-#problem.add_equation("integ(rot_z@u) = 0")
 
-# 17 unknowns, 17 equations
+L = d3.cross(rvec_shell, u)
+problem.add_equation("integ(L[0]) = 0")  # phi component
+problem.add_equation("integ(L[1]) = 0")  # theta component
+problem.add_equation("integ(L[2]) = 0")  # radial component
+
+# 18 unknowns, 18 equations
 
 # Solver
 solver = problem.build_solver(timestepper)
@@ -128,10 +115,10 @@ if not restart:
     C['g'][..., -1] = 0
 else:
     file_handler_mode = 'append'
-    write, initial_timestep = solver.load_state('checkpoints_ng/checkpoints_ng_s1.h5')
+    write, initial_timestep = solver.load_state('checkpoints_mg/checkpoints_mg_s1.h5')
 
 # Analysis
-snapshots = solver.evaluator.add_file_handler('snapshots_ng', iter=100, max_writes=10)
+snapshots = solver.evaluator.add_file_handler('snapshots_mg', iter=100, max_writes=10)
 snapshots.add_task(T, name='T')
 snapshots.add_task(C, name='C')
 #snapshots.add_task(ephi @ u, name='u_phi')
@@ -140,7 +127,7 @@ snapshots.add_task(u, name='u')
 snapshots.add_task(d3.curl(u), name='vorticity')
 
 # Horizontally averaged nonlinear diagnostics
-snapshots_nonlinear = solver.evaluator.add_file_handler('snapshots_nonlinear_ng', iter=10, max_writes=200)
+snapshots_nonlinear = solver.evaluator.add_file_handler('snapshots_nonlinear_mg', iter=10, max_writes=200)
 
 conv_flux = er @ (u*T)
 diff_flux = er @ (-grad_T)
@@ -150,7 +137,7 @@ snapshots_nonlinear.add_task(diff_flux, name='diffusive_heat_flux')
 snapshots_nonlinear.add_task(d3.Integrate((u@u)/2, coords), name='KE_int')
 
 # Checkpoints
-checkpoints = solver.evaluator.add_file_handler('checkpoints_ng', sim_dt=max_timestep*1000, max_writes=1, mode=file_handler_mode)
+checkpoints = solver.evaluator.add_file_handler('checkpoints_mg', sim_dt=max_timestep*1000, max_writes=1, mode=file_handler_mode)
 checkpoints.add_tasks(solver.state)
 
 # CFL

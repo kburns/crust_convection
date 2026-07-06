@@ -8,17 +8,17 @@ logger = logging.getLogger(__name__)
 Lx, Ly, Lz = 4, 4, 1
 Nx, Ny, Nz = 128, 128, 64
 RaT = 1e4
-RaC = 2.2e4
-Le = 100 # Le = 10 is okay, faster bc you can reduce Nx, Ny
+RaC = 100
+Le = 100
 h = 0
-E = 8
-γ = 10
+E = 0
+γ = 0
 dealias = 3/2
 timestepper = d3.RK222
-max_timestep = 1e-3
+max_timestep = 2e-2
 stop_sim_time = max_timestep*1e4
 dtype = np.float64
-restart=1
+restart=0
 
 # Bases
 coords = d3.CartesianCoordinates('x', 'y', 'z')
@@ -101,10 +101,10 @@ if not restart:
     C['g'][..., -1] = 0
 else:
     file_handler_mode = 'append'
-    write, initial_timestep = solver.load_state('checkpoints_CRa22k_E8_gamma10/checkpoints_CRa22k_E8_gamma10_s2.h5')
+    write, initial_timestep = solver.load_state('checkpoints_CRa100/checkpoints_s1.h5')
 
 # Analysis
-snapshots = solver.evaluator.add_file_handler('snapshots_CRa22k_E8_gamma10', iter=100, max_writes=10)
+snapshots = solver.evaluator.add_file_handler('snapshots_CRa100', iter=100, max_writes=10)
 snapshots.add_task(T, name='T')
 snapshots.add_task(C, name='C')
 snapshots.add_task(ez @ u, name='w')
@@ -113,12 +113,12 @@ snapshots.add_task(ey @ d3.curl(u), name='vorticity_y')
 snapshots.add_task(ez @ d3.curl(u), name='vorticity_z')
 
 # Horizontally averaged nonlinear diagnostics
-snapshots_nonlinear = solver.evaluator.add_file_handler('snapshots_nonlinear_CRa22k_E8_gamma10', iter=10, max_writes=200)
+snapshots_nonlinear = solver.evaluator.add_file_handler('snapshots_nonlinear_CRa100', iter=10, max_writes=200)
 snapshots_nonlinear.add_task(d3.Average((ez @ u)*T, ('x', 'y')), name='convective_heat_flux_z')
 snapshots_nonlinear.add_task(d3.Average((u@u)/2, ('x', 'y', 'z')), name='KE_avg')
 
 # Checkpoints
-checkpoints = solver.evaluator.add_file_handler('checkpoints_CRa22k_E8_gamma10', sim_dt=max_timestep*100, max_writes=1, mode=file_handler_mode)
+checkpoints = solver.evaluator.add_file_handler('checkpoints_CRa100', sim_dt=0.1, max_writes=1, mode=file_handler_mode)
 checkpoints.add_tasks(solver.state)
 
 # CFL

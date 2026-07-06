@@ -1,0 +1,423 @@
+run begins at: Mon Jul 6 01:04:54 EDT 2026
+Directory: /home/dabdulah/fs06/d0/dabdulah/GFD_PROJECT/crust_convection/mantle3D_xyperiodic_lewis
+Your job is running on node(s):
+c069
+Cores per node:
+32
+list of loaded modules:
+ 
+2026-07-06 01:05:01,043 subsystems 0/1 INFO :: Building subproblem matrices 1/4096 (~0%) Elapsed: 1s, Remaining: 41m 04s, Rate: 1.7e+00/s
+2026-07-06 01:05:10,675 subsystems 0/1 INFO :: Building subproblem matrices 29/4096 (~1%) Elapsed: 10s, Remaining: 23m 55s, Rate: 2.8e+00/s
+2026-07-06 01:05:20,616 subsystems 0/1 INFO :: Building subproblem matrices 58/4096 (~1%) Elapsed: 20s, Remaining: 23m 25s, Rate: 2.9e+00/s
+2026-07-06 01:05:30,697 subsystems 0/1 INFO :: Building subproblem matrices 88/4096 (~2%) Elapsed: 30s, Remaining: 22m 58s, Rate: 2.9e+00/s
+2026-07-06 01:05:40,755 subsystems 0/1 INFO :: Building subproblem matrices 117/4096 (~3%) Elapsed: 40s, Remaining: 22m 51s, Rate: 2.9e+00/s
+2026-07-06 01:05:50,633 subsystems 0/1 INFO :: Building subproblem matrices 146/4096 (~4%) Elapsed: 50s, Remaining: 22m 38s, Rate: 2.9e+00/s
+2026-07-06 01:06:00,638 subsystems 0/1 INFO :: Building subproblem matrices 176/4096 (~4%) Elapsed: 1m 00s, Remaining: 22m 21s, Rate: 2.9e+00/s
+2026-07-06 01:06:10,453 subsystems 0/1 INFO :: Building subproblem matrices 205/4096 (~5%) Elapsed: 1m 10s, Remaining: 22m 09s, Rate: 2.9e+00/s
+2026-07-06 01:06:20,630 subsystems 0/1 INFO :: Building subproblem matrices 235/4096 (~6%) Elapsed: 1m 20s, Remaining: 21m 57s, Rate: 2.9e+00/s
+2026-07-06 01:06:30,658 subsystems 0/1 INFO :: Building subproblem matrices 265/4096 (~6%) Elapsed: 1m 30s, Remaining: 21m 44s, Rate: 2.9e+00/s
+2026-07-06 01:06:40,493 subsystems 0/1 INFO :: Building subproblem matrices 293/4096 (~7%) Elapsed: 1m 40s, Remaining: 21m 39s, Rate: 2.9e+00/s
+2026-07-06 01:06:50,847 subsystems 0/1 INFO :: Building subproblem matrices 323/4096 (~8%) Elapsed: 1m 50s, Remaining: 21m 30s, Rate: 2.9e+00/s
+2026-07-06 01:07:00,843 subsystems 0/1 INFO :: Building subproblem matrices 352/4096 (~9%) Elapsed: 2m 00s, Remaining: 21m 21s, Rate: 2.9e+00/s
+2026-07-06 01:07:10,473 subsystems 0/1 INFO :: Building subproblem matrices 379/4096 (~9%) Elapsed: 2m 10s, Remaining: 21m 15s, Rate: 2.9e+00/s
+2026-07-06 01:07:20,481 subsystems 0/1 INFO :: Building subproblem matrices 408/4096 (~10%) Elapsed: 2m 20s, Remaining: 21m 06s, Rate: 2.9e+00/s
+2026-07-06 01:07:21,148 subsystems 0/1 INFO :: Building subproblem matrices 410/4096 (~10%) Elapsed: 2m 21s, Remaining: 21m 05s, Rate: 2.9e+00/s
+2026-07-06 01:07:30,599 subsystems 0/1 INFO :: Building subproblem matrices 438/4096 (~11%) Elapsed: 2m 30s, Remaining: 20m 54s, Rate: 2.9e+00/s
+2026-07-06 01:07:40,825 subsystems 0/1 INFO :: Building subproblem matrices 468/4096 (~11%) Elapsed: 2m 40s, Remaining: 20m 43s, Rate: 2.9e+00/s
+2026-07-06 01:07:50,696 subsystems 0/1 INFO :: Building subproblem matrices 496/4096 (~12%) Elapsed: 2m 50s, Remaining: 20m 36s, Rate: 2.9e+00/s
+2026-07-06 01:08:00,604 subsystems 0/1 INFO :: Building subproblem matrices 525/4096 (~13%) Elapsed: 3m 00s, Remaining: 20m 25s, Rate: 2.9e+00/s
+2026-07-06 01:08:10,659 subsystems 0/1 INFO :: Building subproblem matrices 555/4096 (~14%) Elapsed: 3m 10s, Remaining: 20m 14s, Rate: 2.9e+00/s
+2026-07-06 01:08:20,657 subsystems 0/1 INFO :: Building subproblem matrices 584/4096 (~14%) Elapsed: 3m 20s, Remaining: 20m 04s, Rate: 2.9e+00/s
+2026-07-06 01:08:30,496 subsystems 0/1 INFO :: Building subproblem matrices 613/4096 (~15%) Elapsed: 3m 30s, Remaining: 19m 54s, Rate: 2.9e+00/s
+2026-07-06 01:08:40,761 subsystems 0/1 INFO :: Building subproblem matrices 643/4096 (~16%) Elapsed: 3m 40s, Remaining: 19m 43s, Rate: 2.9e+00/s
+2026-07-06 01:08:50,478 subsystems 0/1 INFO :: Building subproblem matrices 671/4096 (~16%) Elapsed: 3m 50s, Remaining: 19m 34s, Rate: 2.9e+00/s
+2026-07-06 01:09:00,740 subsystems 0/1 INFO :: Building subproblem matrices 701/4096 (~17%) Elapsed: 4m 00s, Remaining: 19m 24s, Rate: 2.9e+00/s
+2026-07-06 01:09:10,449 subsystems 0/1 INFO :: Building subproblem matrices 730/4096 (~18%) Elapsed: 4m 10s, Remaining: 19m 13s, Rate: 2.9e+00/s
+2026-07-06 01:09:20,648 subsystems 0/1 INFO :: Building subproblem matrices 760/4096 (~19%) Elapsed: 4m 20s, Remaining: 19m 02s, Rate: 2.9e+00/s
+2026-07-06 01:09:30,765 subsystems 0/1 INFO :: Building subproblem matrices 789/4096 (~19%) Elapsed: 4m 30s, Remaining: 18m 53s, Rate: 2.9e+00/s
+2026-07-06 01:09:40,467 subsystems 0/1 INFO :: Building subproblem matrices 817/4096 (~20%) Elapsed: 4m 40s, Remaining: 18m 44s, Rate: 2.9e+00/s
+2026-07-06 01:09:41,576 subsystems 0/1 INFO :: Building subproblem matrices 820/4096 (~20%) Elapsed: 4m 41s, Remaining: 18m 43s, Rate: 2.9e+00/s
+2026-07-06 01:09:50,553 subsystems 0/1 INFO :: Building subproblem matrices 847/4096 (~21%) Elapsed: 4m 50s, Remaining: 18m 33s, Rate: 2.9e+00/s
+2026-07-06 01:10:00,445 subsystems 0/1 INFO :: Building subproblem matrices 876/4096 (~21%) Elapsed: 5m 00s, Remaining: 18m 23s, Rate: 2.9e+00/s
+2026-07-06 01:10:10,480 subsystems 0/1 INFO :: Building subproblem matrices 906/4096 (~22%) Elapsed: 5m 10s, Remaining: 18m 12s, Rate: 2.9e+00/s
+2026-07-06 01:10:20,561 subsystems 0/1 INFO :: Building subproblem matrices 936/4096 (~23%) Elapsed: 5m 20s, Remaining: 18m 01s, Rate: 2.9e+00/s
+2026-07-06 01:10:30,470 subsystems 0/1 INFO :: Building subproblem matrices 965/4096 (~24%) Elapsed: 5m 30s, Remaining: 17m 51s, Rate: 2.9e+00/s
+2026-07-06 01:10:40,552 subsystems 0/1 INFO :: Building subproblem matrices 995/4096 (~24%) Elapsed: 5m 40s, Remaining: 17m 40s, Rate: 2.9e+00/s
+2026-07-06 01:10:50,522 subsystems 0/1 INFO :: Building subproblem matrices 1024/4096 (~25%) Elapsed: 5m 50s, Remaining: 17m 30s, Rate: 2.9e+00/s
+2026-07-06 01:11:00,639 subsystems 0/1 INFO :: Building subproblem matrices 1053/4096 (~26%) Elapsed: 6m 00s, Remaining: 17m 21s, Rate: 2.9e+00/s
+2026-07-06 01:11:10,549 subsystems 0/1 INFO :: Building subproblem matrices 1082/4096 (~26%) Elapsed: 6m 10s, Remaining: 17m 11s, Rate: 2.9e+00/s
+2026-07-06 01:11:20,592 subsystems 0/1 INFO :: Building subproblem matrices 1112/4096 (~27%) Elapsed: 6m 20s, Remaining: 17m 00s, Rate: 2.9e+00/s
+2026-07-06 01:11:30,492 subsystems 0/1 INFO :: Building subproblem matrices 1140/4096 (~28%) Elapsed: 6m 30s, Remaining: 16m 51s, Rate: 2.9e+00/s
+2026-07-06 01:11:40,479 subsystems 0/1 INFO :: Building subproblem matrices 1169/4096 (~29%) Elapsed: 6m 40s, Remaining: 16m 42s, Rate: 2.9e+00/s
+2026-07-06 01:11:50,684 subsystems 0/1 INFO :: Building subproblem matrices 1199/4096 (~29%) Elapsed: 6m 50s, Remaining: 16m 31s, Rate: 2.9e+00/s
+2026-07-06 01:12:00,615 subsystems 0/1 INFO :: Building subproblem matrices 1227/4096 (~30%) Elapsed: 7m 00s, Remaining: 16m 22s, Rate: 2.9e+00/s
+2026-07-06 01:12:01,928 subsystems 0/1 INFO :: Building subproblem matrices 1230/4096 (~30%) Elapsed: 7m 01s, Remaining: 16m 22s, Rate: 2.9e+00/s
+2026-07-06 01:12:10,758 subsystems 0/1 INFO :: Building subproblem matrices 1256/4096 (~31%) Elapsed: 7m 10s, Remaining: 16m 13s, Rate: 2.9e+00/s
+2026-07-06 01:12:20,472 subsystems 0/1 INFO :: Building subproblem matrices 1285/4096 (~31%) Elapsed: 7m 20s, Remaining: 16m 03s, Rate: 2.9e+00/s
+2026-07-06 01:12:30,724 subsystems 0/1 INFO :: Building subproblem matrices 1315/4096 (~32%) Elapsed: 7m 30s, Remaining: 15m 52s, Rate: 2.9e+00/s
+2026-07-06 01:12:40,754 subsystems 0/1 INFO :: Building subproblem matrices 1341/4096 (~33%) Elapsed: 7m 40s, Remaining: 15m 46s, Rate: 2.9e+00/s
+2026-07-06 01:12:50,573 subsystems 0/1 INFO :: Building subproblem matrices 1370/4096 (~33%) Elapsed: 7m 50s, Remaining: 15m 35s, Rate: 2.9e+00/s
+2026-07-06 01:13:00,755 subsystems 0/1 INFO :: Building subproblem matrices 1400/4096 (~34%) Elapsed: 8m 00s, Remaining: 15m 25s, Rate: 2.9e+00/s
+2026-07-06 01:13:10,483 subsystems 0/1 INFO :: Building subproblem matrices 1429/4096 (~35%) Elapsed: 8m 10s, Remaining: 15m 15s, Rate: 2.9e+00/s
+2026-07-06 01:13:20,640 subsystems 0/1 INFO :: Building subproblem matrices 1459/4096 (~36%) Elapsed: 8m 20s, Remaining: 15m 04s, Rate: 2.9e+00/s
+2026-07-06 01:13:30,485 subsystems 0/1 INFO :: Building subproblem matrices 1487/4096 (~36%) Elapsed: 8m 30s, Remaining: 14m 55s, Rate: 2.9e+00/s
+2026-07-06 01:13:40,709 subsystems 0/1 INFO :: Building subproblem matrices 1517/4096 (~37%) Elapsed: 8m 40s, Remaining: 14m 44s, Rate: 2.9e+00/s
+2026-07-06 01:13:50,551 subsystems 0/1 INFO :: Building subproblem matrices 1546/4096 (~38%) Elapsed: 8m 50s, Remaining: 14m 34s, Rate: 2.9e+00/s
+2026-07-06 01:14:00,648 subsystems 0/1 INFO :: Building subproblem matrices 1576/4096 (~38%) Elapsed: 9m 00s, Remaining: 14m 24s, Rate: 2.9e+00/s
+2026-07-06 01:14:10,702 subsystems 0/1 INFO :: Building subproblem matrices 1606/4096 (~39%) Elapsed: 9m 10s, Remaining: 14m 13s, Rate: 2.9e+00/s
+2026-07-06 01:14:20,565 subsystems 0/1 INFO :: Building subproblem matrices 1635/4096 (~40%) Elapsed: 9m 20s, Remaining: 14m 03s, Rate: 2.9e+00/s
+2026-07-06 01:14:22,535 subsystems 0/1 INFO :: Building subproblem matrices 1640/4096 (~40%) Elapsed: 9m 22s, Remaining: 14m 02s, Rate: 2.9e+00/s
+2026-07-06 01:14:30,617 subsystems 0/1 INFO :: Building subproblem matrices 1664/4096 (~41%) Elapsed: 9m 30s, Remaining: 13m 53s, Rate: 2.9e+00/s
+2026-07-06 01:14:40,743 subsystems 0/1 INFO :: Building subproblem matrices 1691/4096 (~41%) Elapsed: 9m 40s, Remaining: 13m 45s, Rate: 2.9e+00/s
+2026-07-06 01:14:50,471 subsystems 0/1 INFO :: Building subproblem matrices 1720/4096 (~42%) Elapsed: 9m 50s, Remaining: 13m 35s, Rate: 2.9e+00/s
+2026-07-06 01:15:00,488 subsystems 0/1 INFO :: Building subproblem matrices 1749/4096 (~43%) Elapsed: 10m 00s, Remaining: 13m 25s, Rate: 2.9e+00/s
+2026-07-06 01:15:10,642 subsystems 0/1 INFO :: Building subproblem matrices 1779/4096 (~43%) Elapsed: 10m 10s, Remaining: 13m 15s, Rate: 2.9e+00/s
+2026-07-06 01:15:20,707 subsystems 0/1 INFO :: Building subproblem matrices 1808/4096 (~44%) Elapsed: 10m 20s, Remaining: 13m 05s, Rate: 2.9e+00/s
+2026-07-06 01:15:30,488 subsystems 0/1 INFO :: Building subproblem matrices 1837/4096 (~45%) Elapsed: 10m 30s, Remaining: 12m 55s, Rate: 2.9e+00/s
+2026-07-06 01:15:40,629 subsystems 0/1 INFO :: Building subproblem matrices 1867/4096 (~46%) Elapsed: 10m 40s, Remaining: 12m 44s, Rate: 2.9e+00/s
+2026-07-06 01:15:50,702 subsystems 0/1 INFO :: Building subproblem matrices 1897/4096 (~46%) Elapsed: 10m 50s, Remaining: 12m 34s, Rate: 2.9e+00/s
+2026-07-06 01:16:00,458 subsystems 0/1 INFO :: Building subproblem matrices 1925/4096 (~47%) Elapsed: 11m 00s, Remaining: 12m 24s, Rate: 2.9e+00/s
+2026-07-06 01:16:10,643 subsystems 0/1 INFO :: Building subproblem matrices 1955/4096 (~48%) Elapsed: 11m 10s, Remaining: 12m 14s, Rate: 2.9e+00/s
+2026-07-06 01:16:20,707 subsystems 0/1 INFO :: Building subproblem matrices 1985/4096 (~48%) Elapsed: 11m 20s, Remaining: 12m 03s, Rate: 2.9e+00/s
+2026-07-06 01:16:30,471 subsystems 0/1 INFO :: Building subproblem matrices 2013/4096 (~49%) Elapsed: 11m 30s, Remaining: 11m 54s, Rate: 2.9e+00/s
+2026-07-06 01:16:40,632 subsystems 0/1 INFO :: Building subproblem matrices 2043/4096 (~50%) Elapsed: 11m 40s, Remaining: 11m 44s, Rate: 2.9e+00/s
+2026-07-06 01:16:42,961 subsystems 0/1 INFO :: Building subproblem matrices 2050/4096 (~50%) Elapsed: 11m 43s, Remaining: 11m 41s, Rate: 2.9e+00/s
+2026-07-06 01:16:50,649 subsystems 0/1 INFO :: Building subproblem matrices 2072/4096 (~51%) Elapsed: 11m 50s, Remaining: 11m 34s, Rate: 2.9e+00/s
+2026-07-06 01:17:00,731 subsystems 0/1 INFO :: Building subproblem matrices 2101/4096 (~51%) Elapsed: 12m 00s, Remaining: 11m 24s, Rate: 2.9e+00/s
+2026-07-06 01:17:10,575 subsystems 0/1 INFO :: Building subproblem matrices 2127/4096 (~52%) Elapsed: 12m 10s, Remaining: 11m 16s, Rate: 2.9e+00/s
+2026-07-06 01:17:20,654 subsystems 0/1 INFO :: Building subproblem matrices 2157/4096 (~53%) Elapsed: 12m 20s, Remaining: 11m 05s, Rate: 2.9e+00/s
+2026-07-06 01:17:30,450 subsystems 0/1 INFO :: Building subproblem matrices 2185/4096 (~53%) Elapsed: 12m 30s, Remaining: 10m 56s, Rate: 2.9e+00/s
+2026-07-06 01:17:40,542 subsystems 0/1 INFO :: Building subproblem matrices 2215/4096 (~54%) Elapsed: 12m 40s, Remaining: 10m 45s, Rate: 2.9e+00/s
+2026-07-06 01:17:50,610 subsystems 0/1 INFO :: Building subproblem matrices 2245/4096 (~55%) Elapsed: 12m 50s, Remaining: 10m 35s, Rate: 2.9e+00/s
+2026-07-06 01:18:00,451 subsystems 0/1 INFO :: Building subproblem matrices 2273/4096 (~55%) Elapsed: 13m 00s, Remaining: 10m 26s, Rate: 2.9e+00/s
+2026-07-06 01:18:10,473 subsystems 0/1 INFO :: Building subproblem matrices 2302/4096 (~56%) Elapsed: 13m 10s, Remaining: 10m 16s, Rate: 2.9e+00/s
+2026-07-06 01:18:20,516 subsystems 0/1 INFO :: Building subproblem matrices 2332/4096 (~57%) Elapsed: 13m 20s, Remaining: 10m 05s, Rate: 2.9e+00/s
+2026-07-06 01:18:30,654 subsystems 0/1 INFO :: Building subproblem matrices 2362/4096 (~58%) Elapsed: 13m 30s, Remaining: 9m 55s, Rate: 2.9e+00/s
+2026-07-06 01:18:40,646 subsystems 0/1 INFO :: Building subproblem matrices 2391/4096 (~58%) Elapsed: 13m 40s, Remaining: 9m 45s, Rate: 2.9e+00/s
+2026-07-06 01:18:50,736 subsystems 0/1 INFO :: Building subproblem matrices 2421/4096 (~59%) Elapsed: 13m 50s, Remaining: 9m 34s, Rate: 2.9e+00/s
+2026-07-06 01:19:00,490 subsystems 0/1 INFO :: Building subproblem matrices 2450/4096 (~60%) Elapsed: 14m 00s, Remaining: 9m 24s, Rate: 2.9e+00/s
+2026-07-06 01:19:03,852 subsystems 0/1 INFO :: Building subproblem matrices 2460/4096 (~60%) Elapsed: 14m 03s, Remaining: 9m 21s, Rate: 2.9e+00/s
+2026-07-06 01:19:10,695 subsystems 0/1 INFO :: Building subproblem matrices 2480/4096 (~61%) Elapsed: 14m 10s, Remaining: 9m 14s, Rate: 2.9e+00/s
+2026-07-06 01:19:20,765 subsystems 0/1 INFO :: Building subproblem matrices 2510/4096 (~61%) Elapsed: 14m 20s, Remaining: 9m 04s, Rate: 2.9e+00/s
+2026-07-06 01:19:30,581 subsystems 0/1 INFO :: Building subproblem matrices 2538/4096 (~62%) Elapsed: 14m 30s, Remaining: 8m 54s, Rate: 2.9e+00/s
+2026-07-06 01:19:40,641 subsystems 0/1 INFO :: Building subproblem matrices 2568/4096 (~63%) Elapsed: 14m 40s, Remaining: 8m 44s, Rate: 2.9e+00/s
+2026-07-06 01:19:50,715 subsystems 0/1 INFO :: Building subproblem matrices 2597/4096 (~63%) Elapsed: 14m 50s, Remaining: 8m 34s, Rate: 2.9e+00/s
+2026-07-06 01:20:00,493 subsystems 0/1 INFO :: Building subproblem matrices 2625/4096 (~64%) Elapsed: 15m 00s, Remaining: 8m 24s, Rate: 2.9e+00/s
+2026-07-06 01:20:10,578 subsystems 0/1 INFO :: Building subproblem matrices 2655/4096 (~65%) Elapsed: 15m 10s, Remaining: 8m 14s, Rate: 2.9e+00/s
+2026-07-06 01:20:20,701 subsystems 0/1 INFO :: Building subproblem matrices 2681/4096 (~65%) Elapsed: 15m 20s, Remaining: 8m 06s, Rate: 2.9e+00/s
+2026-07-06 01:20:30,449 subsystems 0/1 INFO :: Building subproblem matrices 2710/4096 (~66%) Elapsed: 15m 30s, Remaining: 7m 56s, Rate: 2.9e+00/s
+2026-07-06 01:20:40,530 subsystems 0/1 INFO :: Building subproblem matrices 2740/4096 (~67%) Elapsed: 15m 40s, Remaining: 7m 45s, Rate: 2.9e+00/s
+2026-07-06 01:20:50,713 subsystems 0/1 INFO :: Building subproblem matrices 2770/4096 (~68%) Elapsed: 15m 50s, Remaining: 7m 35s, Rate: 2.9e+00/s
+2026-07-06 01:21:00,577 subsystems 0/1 INFO :: Building subproblem matrices 2799/4096 (~68%) Elapsed: 16m 00s, Remaining: 7m 25s, Rate: 2.9e+00/s
+2026-07-06 01:21:10,646 subsystems 0/1 INFO :: Building subproblem matrices 2829/4096 (~69%) Elapsed: 16m 10s, Remaining: 7m 15s, Rate: 2.9e+00/s
+2026-07-06 01:21:20,738 subsystems 0/1 INFO :: Building subproblem matrices 2859/4096 (~70%) Elapsed: 16m 20s, Remaining: 7m 04s, Rate: 2.9e+00/s
+2026-07-06 01:21:24,537 subsystems 0/1 INFO :: Building subproblem matrices 2870/4096 (~70%) Elapsed: 16m 24s, Remaining: 7m 00s, Rate: 2.9e+00/s
+2026-07-06 01:21:30,570 subsystems 0/1 INFO :: Building subproblem matrices 2888/4096 (~71%) Elapsed: 16m 30s, Remaining: 6m 54s, Rate: 2.9e+00/s
+2026-07-06 01:21:40,617 subsystems 0/1 INFO :: Building subproblem matrices 2918/4096 (~71%) Elapsed: 16m 40s, Remaining: 6m 44s, Rate: 2.9e+00/s
+2026-07-06 01:21:50,659 subsystems 0/1 INFO :: Building subproblem matrices 2947/4096 (~72%) Elapsed: 16m 50s, Remaining: 6m 34s, Rate: 2.9e+00/s
+2026-07-06 01:22:00,558 subsystems 0/1 INFO :: Building subproblem matrices 2976/4096 (~73%) Elapsed: 17m 00s, Remaining: 6m 24s, Rate: 2.9e+00/s
+2026-07-06 01:22:10,643 subsystems 0/1 INFO :: Building subproblem matrices 3006/4096 (~73%) Elapsed: 17m 10s, Remaining: 6m 14s, Rate: 2.9e+00/s
+2026-07-06 01:22:20,567 subsystems 0/1 INFO :: Building subproblem matrices 3035/4096 (~74%) Elapsed: 17m 20s, Remaining: 6m 04s, Rate: 2.9e+00/s
+2026-07-06 01:22:30,618 subsystems 0/1 INFO :: Building subproblem matrices 3064/4096 (~75%) Elapsed: 17m 30s, Remaining: 5m 54s, Rate: 2.9e+00/s
+2026-07-06 01:22:40,674 subsystems 0/1 INFO :: Building subproblem matrices 3094/4096 (~76%) Elapsed: 17m 40s, Remaining: 5m 43s, Rate: 2.9e+00/s
+2026-07-06 01:22:50,702 subsystems 0/1 INFO :: Building subproblem matrices 3123/4096 (~76%) Elapsed: 17m 50s, Remaining: 5m 33s, Rate: 2.9e+00/s
+2026-07-06 01:23:00,569 subsystems 0/1 INFO :: Building subproblem matrices 3152/4096 (~77%) Elapsed: 18m 00s, Remaining: 5m 23s, Rate: 2.9e+00/s
+2026-07-06 01:23:10,466 subsystems 0/1 INFO :: Building subproblem matrices 3181/4096 (~78%) Elapsed: 18m 10s, Remaining: 5m 14s, Rate: 2.9e+00/s
+2026-07-06 01:23:20,666 subsystems 0/1 INFO :: Building subproblem matrices 3211/4096 (~78%) Elapsed: 18m 20s, Remaining: 5m 03s, Rate: 2.9e+00/s
+2026-07-06 01:23:30,448 subsystems 0/1 INFO :: Building subproblem matrices 3239/4096 (~79%) Elapsed: 18m 30s, Remaining: 4m 54s, Rate: 2.9e+00/s
+2026-07-06 01:23:40,652 subsystems 0/1 INFO :: Building subproblem matrices 3269/4096 (~80%) Elapsed: 18m 40s, Remaining: 4m 43s, Rate: 2.9e+00/s
+2026-07-06 01:23:44,478 subsystems 0/1 INFO :: Building subproblem matrices 3280/4096 (~80%) Elapsed: 18m 44s, Remaining: 4m 40s, Rate: 2.9e+00/s
+2026-07-06 01:23:50,556 subsystems 0/1 INFO :: Building subproblem matrices 3298/4096 (~81%) Elapsed: 18m 50s, Remaining: 4m 33s, Rate: 2.9e+00/s
+2026-07-06 01:24:00,670 subsystems 0/1 INFO :: Building subproblem matrices 3328/4096 (~81%) Elapsed: 19m 00s, Remaining: 4m 23s, Rate: 2.9e+00/s
+2026-07-06 01:24:10,771 subsystems 0/1 INFO :: Building subproblem matrices 3358/4096 (~82%) Elapsed: 19m 10s, Remaining: 4m 13s, Rate: 2.9e+00/s
+2026-07-06 01:24:20,449 subsystems 0/1 INFO :: Building subproblem matrices 3383/4096 (~83%) Elapsed: 19m 20s, Remaining: 4m 04s, Rate: 2.9e+00/s
+2026-07-06 01:24:30,645 subsystems 0/1 INFO :: Building subproblem matrices 3413/4096 (~83%) Elapsed: 19m 30s, Remaining: 3m 54s, Rate: 2.9e+00/s
+2026-07-06 01:24:40,464 subsystems 0/1 INFO :: Building subproblem matrices 3441/4096 (~84%) Elapsed: 19m 40s, Remaining: 3m 45s, Rate: 2.9e+00/s
+2026-07-06 01:24:50,735 subsystems 0/1 INFO :: Building subproblem matrices 3471/4096 (~85%) Elapsed: 19m 50s, Remaining: 3m 34s, Rate: 2.9e+00/s
+2026-07-06 01:25:00,446 subsystems 0/1 INFO :: Building subproblem matrices 3500/4096 (~85%) Elapsed: 20m 00s, Remaining: 3m 24s, Rate: 2.9e+00/s
+2026-07-06 01:25:10,471 subsystems 0/1 INFO :: Building subproblem matrices 3529/4096 (~86%) Elapsed: 20m 10s, Remaining: 3m 14s, Rate: 2.9e+00/s
+2026-07-06 01:25:20,672 subsystems 0/1 INFO :: Building subproblem matrices 3559/4096 (~87%) Elapsed: 20m 20s, Remaining: 3m 04s, Rate: 2.9e+00/s
+2026-07-06 01:25:30,578 subsystems 0/1 INFO :: Building subproblem matrices 3588/4096 (~88%) Elapsed: 20m 30s, Remaining: 2m 54s, Rate: 2.9e+00/s
+2026-07-06 01:25:40,704 subsystems 0/1 INFO :: Building subproblem matrices 3618/4096 (~88%) Elapsed: 20m 40s, Remaining: 2m 44s, Rate: 2.9e+00/s
+2026-07-06 01:25:50,628 subsystems 0/1 INFO :: Building subproblem matrices 3647/4096 (~89%) Elapsed: 20m 50s, Remaining: 2m 34s, Rate: 2.9e+00/s
+2026-07-06 01:26:00,667 subsystems 0/1 INFO :: Building subproblem matrices 3677/4096 (~90%) Elapsed: 21m 00s, Remaining: 2m 24s, Rate: 2.9e+00/s
+2026-07-06 01:26:05,323 subsystems 0/1 INFO :: Building subproblem matrices 3690/4096 (~90%) Elapsed: 21m 05s, Remaining: 2m 19s, Rate: 2.9e+00/s
+2026-07-06 01:26:10,456 subsystems 0/1 INFO :: Building subproblem matrices 3705/4096 (~90%) Elapsed: 21m 10s, Remaining: 2m 14s, Rate: 2.9e+00/s
+2026-07-06 01:26:20,740 subsystems 0/1 INFO :: Building subproblem matrices 3735/4096 (~91%) Elapsed: 21m 20s, Remaining: 2m 04s, Rate: 2.9e+00/s
+2026-07-06 01:26:30,510 subsystems 0/1 INFO :: Building subproblem matrices 3764/4096 (~92%) Elapsed: 21m 30s, Remaining: 1m 54s, Rate: 2.9e+00/s
+2026-07-06 01:26:40,727 subsystems 0/1 INFO :: Building subproblem matrices 3794/4096 (~93%) Elapsed: 21m 40s, Remaining: 1m 44s, Rate: 2.9e+00/s
+2026-07-06 01:26:50,505 subsystems 0/1 INFO :: Building subproblem matrices 3823/4096 (~93%) Elapsed: 21m 50s, Remaining: 1m 34s, Rate: 2.9e+00/s
+2026-07-06 01:27:00,585 subsystems 0/1 INFO :: Building subproblem matrices 3853/4096 (~94%) Elapsed: 22m 00s, Remaining: 1m 23s, Rate: 2.9e+00/s
+2026-07-06 01:27:10,451 subsystems 0/1 INFO :: Building subproblem matrices 3881/4096 (~95%) Elapsed: 22m 10s, Remaining: 1m 14s, Rate: 2.9e+00/s
+2026-07-06 01:27:20,552 subsystems 0/1 INFO :: Building subproblem matrices 3911/4096 (~95%) Elapsed: 22m 20s, Remaining: 1m 03s, Rate: 2.9e+00/s
+2026-07-06 01:27:30,671 subsystems 0/1 INFO :: Building subproblem matrices 3941/4096 (~96%) Elapsed: 22m 30s, Remaining: 53s, Rate: 2.9e+00/s
+2026-07-06 01:27:40,483 subsystems 0/1 INFO :: Building subproblem matrices 3969/4096 (~97%) Elapsed: 22m 40s, Remaining: 44s, Rate: 2.9e+00/s
+2026-07-06 01:27:50,583 subsystems 0/1 INFO :: Building subproblem matrices 3999/4096 (~98%) Elapsed: 22m 50s, Remaining: 33s, Rate: 2.9e+00/s
+2026-07-06 01:28:00,472 subsystems 0/1 INFO :: Building subproblem matrices 4027/4096 (~98%) Elapsed: 23m 00s, Remaining: 24s, Rate: 2.9e+00/s
+2026-07-06 01:28:10,601 subsystems 0/1 INFO :: Building subproblem matrices 4057/4096 (~99%) Elapsed: 23m 10s, Remaining: 13s, Rate: 2.9e+00/s
+2026-07-06 01:28:20,696 subsystems 0/1 INFO :: Building subproblem matrices 4087/4096 (~100%) Elapsed: 23m 20s, Remaining: 3s, Rate: 2.9e+00/s
+2026-07-06 01:28:23,842 subsystems 0/1 INFO :: Building subproblem matrices 4096/4096 (~100%) Elapsed: 23m 23s, Remaining: 0s, Rate: 2.9e+00/s
+2026-07-06 01:28:24,063 __main__ 0/1 INFO :: Starting main loop
+2026-07-06 01:29:59,386 __main__ 0/1 INFO :: Iteration=1, Time=2.000000e-02, dt=2.000000e-02, max(KE)=0.000000
+2026-07-06 01:40:00,302 __main__ 0/1 INFO :: Iteration=11, Time=1.056201e-01, dt=2.357501e-04, max(KE)=272.497514
+2026-07-06 01:43:40,767 __main__ 0/1 INFO :: Iteration=21, Time=1.077965e-01, dt=2.059184e-04, max(KE)=439.893288
+2026-07-06 01:48:32,524 __main__ 0/1 INFO :: Iteration=31, Time=1.096057e-01, dt=1.718673e-04, max(KE)=647.517908
+2026-07-06 01:53:23,940 __main__ 0/1 INFO :: Iteration=41, Time=1.111377e-01, dt=1.426432e-04, max(KE)=883.813373
+2026-07-06 01:57:04,270 __main__ 0/1 INFO :: Iteration=51, Time=1.124821e-01, dt=1.274176e-04, max(KE)=1141.408497
+2026-07-06 02:00:45,181 __main__ 0/1 INFO :: Iteration=61, Time=1.136874e-01, dt=1.135722e-04, max(KE)=1414.393212
+2026-07-06 02:03:16,702 __main__ 0/1 INFO :: Iteration=71, Time=1.147877e-01, dt=1.076605e-04, max(KE)=1695.311922
+2026-07-06 02:06:56,860 __main__ 0/1 INFO :: Iteration=81, Time=1.158058e-01, dt=9.613980e-05, max(KE)=2019.464713
+2026-07-06 02:09:27,582 __main__ 0/1 INFO :: Iteration=91, Time=1.167510e-01, dt=9.072935e-05, max(KE)=2339.699198
+2026-07-06 02:12:02,950 __main__ 0/1 INFO :: Iteration=101, Time=1.176385e-01, dt=8.577702e-05, max(KE)=2644.959506
+2026-07-06 02:14:35,841 __main__ 0/1 INFO :: Iteration=111, Time=1.184782e-01, dt=8.126975e-05, max(KE)=2926.899818
+2026-07-06 02:17:07,677 __main__ 0/1 INFO :: Iteration=121, Time=1.192826e-01, dt=7.707848e-05, max(KE)=3180.730064
+2026-07-06 02:18:33,275 __main__ 0/1 INFO :: Iteration=131, Time=1.200533e-01, dt=7.707848e-05, max(KE)=3399.858849
+2026-07-06 02:21:06,985 __main__ 0/1 INFO :: Iteration=141, Time=1.208004e-01, dt=7.311683e-05, max(KE)=3585.717422
+2026-07-06 02:22:30,382 __main__ 0/1 INFO :: Iteration=151, Time=1.215315e-01, dt=7.311683e-05, max(KE)=3736.294126
+2026-07-06 02:23:51,212 __main__ 0/1 INFO :: Iteration=161, Time=1.222627e-01, dt=7.311683e-05, max(KE)=3854.501652
+2026-07-06 02:26:21,468 __main__ 0/1 INFO :: Iteration=171, Time=1.229602e-01, dt=6.937607e-05, max(KE)=3936.755015
+2026-07-06 02:27:47,432 __main__ 0/1 INFO :: Iteration=181, Time=1.236540e-01, dt=6.937607e-05, max(KE)=3988.735998
+2026-07-06 02:29:07,607 __main__ 0/1 INFO :: Iteration=191, Time=1.243477e-01, dt=6.937607e-05, max(KE)=4013.043881
+2026-07-06 02:30:32,157 __main__ 0/1 INFO :: Iteration=201, Time=1.250415e-01, dt=6.937607e-05, max(KE)=4011.957920
+2026-07-06 02:31:51,390 __main__ 0/1 INFO :: Iteration=211, Time=1.257352e-01, dt=6.937607e-05, max(KE)=3988.223304
+2026-07-06 02:33:14,959 __main__ 0/1 INFO :: Iteration=221, Time=1.264290e-01, dt=6.937607e-05, max(KE)=3944.825381
+2026-07-06 02:34:35,110 __main__ 0/1 INFO :: Iteration=231, Time=1.271228e-01, dt=6.937607e-05, max(KE)=3884.805325
+2026-07-06 02:35:53,948 __main__ 0/1 INFO :: Iteration=241, Time=1.278165e-01, dt=6.937607e-05, max(KE)=3811.121440
+2026-07-06 02:37:15,156 __main__ 0/1 INFO :: Iteration=251, Time=1.285103e-01, dt=6.937607e-05, max(KE)=3726.553199
+2026-07-06 02:38:34,444 __main__ 0/1 INFO :: Iteration=261, Time=1.292040e-01, dt=6.937607e-05, max(KE)=3633.641387
+2026-07-06 02:39:54,542 __main__ 0/1 INFO :: Iteration=271, Time=1.298978e-01, dt=6.937607e-05, max(KE)=3534.656532
+2026-07-06 02:42:25,293 __main__ 0/1 INFO :: Iteration=281, Time=1.306056e-01, dt=7.289589e-05, max(KE)=3429.997094
+2026-07-06 02:43:48,515 __main__ 0/1 INFO :: Iteration=291, Time=1.313346e-01, dt=7.289589e-05, max(KE)=3321.432744
+2026-07-06 02:45:17,075 __main__ 0/1 INFO :: Iteration=301, Time=1.320636e-01, dt=7.289589e-05, max(KE)=3211.795768
+2026-07-06 02:47:49,252 __main__ 0/1 INFO :: Iteration=311, Time=1.328037e-01, dt=7.660676e-05, max(KE)=3101.249765
+2026-07-06 02:49:11,867 __main__ 0/1 INFO :: Iteration=321, Time=1.335697e-01, dt=7.660676e-05, max(KE)=2987.706112
+2026-07-06 02:50:33,371 __main__ 0/1 INFO :: Iteration=331, Time=1.343358e-01, dt=7.660676e-05, max(KE)=2876.661624
+2026-07-06 02:53:03,834 __main__ 0/1 INFO :: Iteration=341, Time=1.351251e-01, dt=8.048856e-05, max(KE)=2766.215353
+2026-07-06 02:54:23,560 __main__ 0/1 INFO :: Iteration=351, Time=1.359300e-01, dt=8.048856e-05, max(KE)=2657.257338
+2026-07-06 02:56:53,824 __main__ 0/1 INFO :: Iteration=361, Time=1.367390e-01, dt=8.455157e-05, max(KE)=2553.012934
+2026-07-06 02:58:14,707 __main__ 0/1 INFO :: Iteration=371, Time=1.375845e-01, dt=8.455157e-05, max(KE)=2448.881444
+2026-07-06 02:59:34,167 __main__ 0/1 INFO :: Iteration=381, Time=1.384300e-01, dt=8.455157e-05, max(KE)=2350.405138
+2026-07-06 03:02:06,230 __main__ 0/1 INFO :: Iteration=391, Time=1.393052e-01, dt=8.878917e-05, max(KE)=2254.899104
+2026-07-06 03:03:30,725 __main__ 0/1 INFO :: Iteration=401, Time=1.401931e-01, dt=8.878917e-05, max(KE)=2163.635234
+2026-07-06 03:06:07,986 __main__ 0/1 INFO :: Iteration=411, Time=1.410902e-01, dt=9.340051e-05, max(KE)=2077.917724
+2026-07-06 03:07:30,749 __main__ 0/1 INFO :: Iteration=421, Time=1.420242e-01, dt=9.340051e-05, max(KE)=1994.401995
+2026-07-06 03:08:54,679 __main__ 0/1 INFO :: Iteration=431, Time=1.429582e-01, dt=9.340051e-05, max(KE)=1916.879713
+2026-07-06 03:11:26,389 __main__ 0/1 INFO :: Iteration=441, Time=1.439212e-01, dt=9.824032e-05, max(KE)=1843.190790
+2026-07-06 03:12:47,730 __main__ 0/1 INFO :: Iteration=451, Time=1.449037e-01, dt=9.824032e-05, max(KE)=1773.355453
+2026-07-06 03:14:07,476 __main__ 0/1 INFO :: Iteration=461, Time=1.458861e-01, dt=9.824032e-05, max(KE)=1708.864180
+2026-07-06 03:16:39,217 __main__ 0/1 INFO :: Iteration=471, Time=1.469137e-01, dt=1.032641e-04, max(KE)=1646.941521
+2026-07-06 03:17:59,655 __main__ 0/1 INFO :: Iteration=481, Time=1.479463e-01, dt=1.032641e-04, max(KE)=1589.325051
+2026-07-06 03:19:18,860 __main__ 0/1 INFO :: Iteration=491, Time=1.489790e-01, dt=1.032641e-04, max(KE)=1536.186609
+2026-07-06 03:21:53,959 __main__ 0/1 INFO :: Iteration=501, Time=1.500641e-01, dt=1.085167e-04, max(KE)=1485.629325
+2026-07-06 03:23:14,031 __main__ 0/1 INFO :: Iteration=511, Time=1.511493e-01, dt=1.085167e-04, max(KE)=1438.794859
+2026-07-06 03:24:36,608 __main__ 0/1 INFO :: Iteration=521, Time=1.522345e-01, dt=1.085167e-04, max(KE)=1395.499193
+2026-07-06 03:27:10,935 __main__ 0/1 INFO :: Iteration=531, Time=1.533637e-01, dt=1.140291e-04, max(KE)=1353.977275
+2026-07-06 03:28:32,546 __main__ 0/1 INFO :: Iteration=541, Time=1.545040e-01, dt=1.140291e-04, max(KE)=1314.884985
+2026-07-06 03:29:55,149 __main__ 0/1 INFO :: Iteration=551, Time=1.556443e-01, dt=1.140291e-04, max(KE)=1278.474463
+2026-07-06 03:32:29,523 __main__ 0/1 INFO :: Iteration=561, Time=1.568017e-01, dt=1.197351e-04, max(KE)=1244.063907
+2026-07-06 03:33:51,985 __main__ 0/1 INFO :: Iteration=571, Time=1.579991e-01, dt=1.197351e-04, max(KE)=1210.453477
+2026-07-06 03:35:11,290 __main__ 0/1 INFO :: Iteration=581, Time=1.591964e-01, dt=1.197351e-04, max(KE)=1178.711799
+2026-07-06 03:36:32,424 __main__ 0/1 INFO :: Iteration=591, Time=1.603938e-01, dt=1.197351e-04, max(KE)=1148.526098
+2026-07-06 03:39:08,737 __main__ 0/1 INFO :: Iteration=601, Time=1.616153e-01, dt=1.257750e-04, max(KE)=1119.204842
+2026-07-06 03:40:29,864 __main__ 0/1 INFO :: Iteration=611, Time=1.628730e-01, dt=1.257750e-04, max(KE)=1100.274484
+2026-07-06 03:41:49,567 __main__ 0/1 INFO :: Iteration=621, Time=1.641308e-01, dt=1.257750e-04, max(KE)=1096.701749
+2026-07-06 03:43:09,951 __main__ 0/1 INFO :: Iteration=631, Time=1.653885e-01, dt=1.257750e-04, max(KE)=1091.378268
+2026-07-06 03:44:30,124 __main__ 0/1 INFO :: Iteration=641, Time=1.666463e-01, dt=1.257750e-04, max(KE)=1084.109490
+2026-07-06 03:45:51,811 __main__ 0/1 INFO :: Iteration=651, Time=1.679040e-01, dt=1.257750e-04, max(KE)=1074.752979
+2026-07-06 03:47:12,627 __main__ 0/1 INFO :: Iteration=661, Time=1.691618e-01, dt=1.257750e-04, max(KE)=1065.062398
+2026-07-06 03:48:34,163 __main__ 0/1 INFO :: Iteration=671, Time=1.704195e-01, dt=1.257750e-04, max(KE)=1055.023702
+2026-07-06 03:49:54,266 __main__ 0/1 INFO :: Iteration=681, Time=1.716773e-01, dt=1.257750e-04, max(KE)=1042.549289
+2026-07-06 03:51:14,442 __main__ 0/1 INFO :: Iteration=691, Time=1.729350e-01, dt=1.257750e-04, max(KE)=1027.680654
+2026-07-06 03:53:51,134 __main__ 0/1 INFO :: Iteration=701, Time=1.742120e-01, dt=1.321753e-04, max(KE)=1010.312961
+2026-07-06 03:55:13,189 __main__ 0/1 INFO :: Iteration=711, Time=1.755337e-01, dt=1.321753e-04, max(KE)=989.869258
+2026-07-06 03:56:34,760 __main__ 0/1 INFO :: Iteration=721, Time=1.768555e-01, dt=1.321753e-04, max(KE)=967.167189
+2026-07-06 03:57:57,282 __main__ 0/1 INFO :: Iteration=731, Time=1.781772e-01, dt=1.321753e-04, max(KE)=942.398140
+2026-07-06 04:00:29,776 __main__ 0/1 INFO :: Iteration=741, Time=1.795056e-01, dt=1.387991e-04, max(KE)=916.297129
+2026-07-06 04:01:52,257 __main__ 0/1 INFO :: Iteration=751, Time=1.808936e-01, dt=1.387991e-04, max(KE)=889.000886
+2026-07-06 04:03:12,394 __main__ 0/1 INFO :: Iteration=761, Time=1.822816e-01, dt=1.387991e-04, max(KE)=859.946443
+2026-07-06 04:05:46,101 __main__ 0/1 INFO :: Iteration=771, Time=1.836839e-01, dt=1.459697e-04, max(KE)=829.233364
+2026-07-06 04:07:09,969 __main__ 0/1 INFO :: Iteration=781, Time=1.851436e-01, dt=1.459697e-04, max(KE)=795.759866
+2026-07-06 04:08:30,295 __main__ 0/1 INFO :: Iteration=791, Time=1.866033e-01, dt=1.459697e-04, max(KE)=761.192940
+2026-07-06 04:11:07,616 __main__ 0/1 INFO :: Iteration=801, Time=1.881239e-01, dt=1.535847e-04, max(KE)=724.490346
+2026-07-06 04:12:30,286 __main__ 0/1 INFO :: Iteration=811, Time=1.896598e-01, dt=1.535847e-04, max(KE)=686.598341
+2026-07-06 04:15:03,505 __main__ 0/1 INFO :: Iteration=821, Time=1.912510e-01, dt=1.614934e-04, max(KE)=647.221454
+2026-07-06 04:16:25,744 __main__ 0/1 INFO :: Iteration=831, Time=1.928659e-01, dt=1.614934e-04, max(KE)=607.793371
+2026-07-06 04:18:58,547 __main__ 0/1 INFO :: Iteration=841, Time=1.945568e-01, dt=1.699354e-04, max(KE)=566.784312
+2026-07-06 04:21:47,558 __main__ 0/1 INFO :: Iteration=851, Time=1.962818e-01, dt=1.784851e-04, max(KE)=525.255164
+2026-07-06 04:23:12,133 __main__ 0/1 INFO :: Iteration=861, Time=1.980667e-01, dt=1.784851e-04, max(KE)=482.633672
+2026-07-06 04:25:49,622 __main__ 0/1 INFO :: Iteration=871, Time=1.999275e-01, dt=1.879855e-04, max(KE)=439.259885
+2026-07-06 04:28:26,597 __main__ 0/1 INFO :: Iteration=881, Time=2.018562e-01, dt=1.977432e-04, max(KE)=395.793808
+2026-07-06 04:29:48,180 __main__ 0/1 INFO :: Iteration=891, Time=2.038336e-01, dt=1.977432e-04, max(KE)=354.040069
+2026-07-06 04:32:26,546 __main__ 0/1 INFO :: Iteration=901, Time=2.059132e-01, dt=2.079529e-04, max(KE)=313.107354
+2026-07-06 04:33:48,152 __main__ 0/1 INFO :: Iteration=911, Time=2.079927e-01, dt=2.079529e-04, max(KE)=301.723061
+2026-07-06 04:35:09,496 __main__ 0/1 INFO :: Iteration=921, Time=2.100722e-01, dt=2.079529e-04, max(KE)=290.957990
+2026-07-06 04:37:44,441 __main__ 0/1 INFO :: Iteration=931, Time=2.122559e-01, dt=2.183723e-04, max(KE)=280.171072
+2026-07-06 04:39:04,100 __main__ 0/1 INFO :: Iteration=941, Time=2.144397e-01, dt=2.183723e-04, max(KE)=273.503112
+2026-07-06 04:41:40,209 __main__ 0/1 INFO :: Iteration=951, Time=2.166910e-01, dt=2.296420e-04, max(KE)=277.335316
+2026-07-06 04:43:00,216 __main__ 0/1 INFO :: Iteration=961, Time=2.189874e-01, dt=2.296420e-04, max(KE)=280.361961
+2026-07-06 04:44:21,756 __main__ 0/1 INFO :: Iteration=971, Time=2.212838e-01, dt=2.296420e-04, max(KE)=283.115209
+2026-07-06 04:46:57,305 __main__ 0/1 INFO :: Iteration=981, Time=2.236500e-01, dt=2.412637e-04, max(KE)=285.103970
+2026-07-06 04:48:17,349 __main__ 0/1 INFO :: Iteration=991, Time=2.260626e-01, dt=2.412637e-04, max(KE)=286.394341
+2026-07-06 04:49:43,749 __main__ 0/1 INFO :: Iteration=1001, Time=2.284753e-01, dt=2.412637e-04, max(KE)=287.065190
+2026-07-06 04:51:06,430 __main__ 0/1 INFO :: Iteration=1011, Time=2.308879e-01, dt=2.412637e-04, max(KE)=287.252466
+2026-07-06 04:52:26,724 __main__ 0/1 INFO :: Iteration=1021, Time=2.333005e-01, dt=2.412637e-04, max(KE)=287.341865
+2026-07-06 04:53:46,502 __main__ 0/1 INFO :: Iteration=1031, Time=2.357132e-01, dt=2.412637e-04, max(KE)=287.770587
+2026-07-06 04:55:08,742 __main__ 0/1 INFO :: Iteration=1041, Time=2.381258e-01, dt=2.412637e-04, max(KE)=288.359168
+2026-07-06 04:56:30,535 __main__ 0/1 INFO :: Iteration=1051, Time=2.405384e-01, dt=2.412637e-04, max(KE)=288.929924
+2026-07-06 04:57:52,191 __main__ 0/1 INFO :: Iteration=1061, Time=2.429511e-01, dt=2.412637e-04, max(KE)=289.577749
+2026-07-06 04:59:13,962 __main__ 0/1 INFO :: Iteration=1071, Time=2.453637e-01, dt=2.412637e-04, max(KE)=290.396339
+2026-07-06 05:00:35,754 __main__ 0/1 INFO :: Iteration=1081, Time=2.477764e-01, dt=2.412637e-04, max(KE)=291.478448
+2026-07-06 05:01:58,857 __main__ 0/1 INFO :: Iteration=1091, Time=2.501890e-01, dt=2.412637e-04, max(KE)=293.453046
+2026-07-06 05:03:24,590 __main__ 0/1 INFO :: Iteration=1101, Time=2.526016e-01, dt=2.412637e-04, max(KE)=296.216802
+2026-07-06 05:04:44,693 __main__ 0/1 INFO :: Iteration=1111, Time=2.550143e-01, dt=2.412637e-04, max(KE)=299.516319
+2026-07-06 05:06:07,504 __main__ 0/1 INFO :: Iteration=1121, Time=2.574269e-01, dt=2.412637e-04, max(KE)=303.402286
+2026-07-06 05:07:28,026 __main__ 0/1 INFO :: Iteration=1131, Time=2.598395e-01, dt=2.412637e-04, max(KE)=308.381014
+2026-07-06 05:08:50,315 __main__ 0/1 INFO :: Iteration=1141, Time=2.622522e-01, dt=2.412637e-04, max(KE)=314.866076
+2026-07-06 05:10:10,289 __main__ 0/1 INFO :: Iteration=1151, Time=2.646648e-01, dt=2.412637e-04, max(KE)=321.913317
+2026-07-06 05:11:30,920 __main__ 0/1 INFO :: Iteration=1161, Time=2.670775e-01, dt=2.412637e-04, max(KE)=329.439592
+2026-07-06 05:14:05,089 __main__ 0/1 INFO :: Iteration=1171, Time=2.694533e-01, dt=2.289871e-04, max(KE)=337.818319
+2026-07-06 05:15:25,745 __main__ 0/1 INFO :: Iteration=1181, Time=2.717431e-01, dt=2.289871e-04, max(KE)=346.500767
+2026-07-06 05:16:46,177 __main__ 0/1 INFO :: Iteration=1191, Time=2.740330e-01, dt=2.289871e-04, max(KE)=355.156340
+2026-07-06 05:18:10,935 __main__ 0/1 INFO :: Iteration=1201, Time=2.763229e-01, dt=2.289871e-04, max(KE)=363.584695
+2026-07-06 05:20:49,611 __main__ 0/1 INFO :: Iteration=1211, Time=2.785554e-01, dt=2.175133e-04, max(KE)=371.857338
+2026-07-06 05:22:11,235 __main__ 0/1 INFO :: Iteration=1221, Time=2.807305e-01, dt=2.175133e-04, max(KE)=379.599280
+2026-07-06 05:23:33,008 __main__ 0/1 INFO :: Iteration=1231, Time=2.829056e-01, dt=2.175133e-04, max(KE)=386.462739
+2026-07-06 05:24:54,427 __main__ 0/1 INFO :: Iteration=1241, Time=2.850808e-01, dt=2.175133e-04, max(KE)=392.234458
+2026-07-06 05:26:15,227 __main__ 0/1 INFO :: Iteration=1251, Time=2.872559e-01, dt=2.175133e-04, max(KE)=396.701393
+2026-07-06 05:27:35,659 __main__ 0/1 INFO :: Iteration=1261, Time=2.894310e-01, dt=2.175133e-04, max(KE)=399.654485
+2026-07-06 05:28:56,592 __main__ 0/1 INFO :: Iteration=1271, Time=2.916062e-01, dt=2.175133e-04, max(KE)=400.893626
+2026-07-06 05:31:30,696 __main__ 0/1 INFO :: Iteration=1281, Time=2.936941e-01, dt=2.066116e-04, max(KE)=400.537900
+2026-07-06 05:32:51,045 __main__ 0/1 INFO :: Iteration=1291, Time=2.957602e-01, dt=2.066116e-04, max(KE)=398.322014
+2026-07-06 05:34:16,595 __main__ 0/1 INFO :: Iteration=1301, Time=2.978263e-01, dt=2.066116e-04, max(KE)=394.087188
+2026-07-06 05:35:37,198 __main__ 0/1 INFO :: Iteration=1311, Time=2.998924e-01, dt=2.066116e-04, max(KE)=387.754378
+2026-07-06 05:36:57,356 __main__ 0/1 INFO :: Iteration=1321, Time=3.019586e-01, dt=2.066116e-04, max(KE)=379.278020
+2026-07-06 05:38:18,892 __main__ 0/1 INFO :: Iteration=1331, Time=3.040247e-01, dt=2.066116e-04, max(KE)=368.648669
+2026-07-06 05:39:40,702 __main__ 0/1 INFO :: Iteration=1341, Time=3.060908e-01, dt=2.066116e-04, max(KE)=355.894448
+2026-07-06 05:42:14,417 __main__ 0/1 INFO :: Iteration=1351, Time=3.082204e-01, dt=2.171931e-04, max(KE)=341.465003
+2026-07-06 05:43:34,665 __main__ 0/1 INFO :: Iteration=1361, Time=3.103923e-01, dt=2.171931e-04, max(KE)=324.761905
+2026-07-06 05:44:54,925 __main__ 0/1 INFO :: Iteration=1371, Time=3.125643e-01, dt=2.171931e-04, max(KE)=306.616508
+2026-07-06 05:47:29,193 __main__ 0/1 INFO :: Iteration=1381, Time=3.148474e-01, dt=2.283131e-04, max(KE)=286.003074
+2026-07-06 05:48:50,583 __main__ 0/1 INFO :: Iteration=1391, Time=3.171305e-01, dt=2.283131e-04, max(KE)=264.121977
+2026-07-06 05:50:14,495 __main__ 0/1 INFO :: Iteration=1401, Time=3.194137e-01, dt=2.283131e-04, max(KE)=241.930532
+2026-07-06 05:51:34,990 __main__ 0/1 INFO :: Iteration=1411, Time=3.216968e-01, dt=2.283131e-04, max(KE)=221.253291
+2026-07-06 05:52:58,275 __main__ 0/1 INFO :: Iteration=1421, Time=3.239799e-01, dt=2.283131e-04, max(KE)=211.337915
+2026-07-06 05:54:19,641 __main__ 0/1 INFO :: Iteration=1431, Time=3.262630e-01, dt=2.283131e-04, max(KE)=200.997919
+2026-07-06 05:55:41,724 __main__ 0/1 INFO :: Iteration=1441, Time=3.285462e-01, dt=2.283131e-04, max(KE)=194.401393
+2026-07-06 05:57:01,706 __main__ 0/1 INFO :: Iteration=1451, Time=3.308293e-01, dt=2.283131e-04, max(KE)=195.388258
+2026-07-06 05:58:22,934 __main__ 0/1 INFO :: Iteration=1461, Time=3.331124e-01, dt=2.283131e-04, max(KE)=196.343065
+2026-07-06 05:59:44,072 __main__ 0/1 INFO :: Iteration=1471, Time=3.353956e-01, dt=2.283131e-04, max(KE)=196.996371
+2026-07-06 06:01:06,128 __main__ 0/1 INFO :: Iteration=1481, Time=3.376787e-01, dt=2.283131e-04, max(KE)=196.367788
+2026-07-06 06:02:27,462 __main__ 0/1 INFO :: Iteration=1491, Time=3.399618e-01, dt=2.283131e-04, max(KE)=195.499422
+2026-07-06 06:03:51,430 __main__ 0/1 INFO :: Iteration=1501, Time=3.422450e-01, dt=2.283131e-04, max(KE)=194.178121
+2026-07-06 06:05:13,254 __main__ 0/1 INFO :: Iteration=1511, Time=3.445281e-01, dt=2.283131e-04, max(KE)=192.464663
+2026-07-06 06:06:33,287 __main__ 0/1 INFO :: Iteration=1521, Time=3.468112e-01, dt=2.283131e-04, max(KE)=189.656962
+2026-07-06 06:07:56,366 __main__ 0/1 INFO :: Iteration=1531, Time=3.490944e-01, dt=2.283131e-04, max(KE)=186.666691
+2026-07-06 06:10:33,523 __main__ 0/1 INFO :: Iteration=1541, Time=3.514826e-01, dt=2.399865e-04, max(KE)=182.593437
+2026-07-06 06:11:55,228 __main__ 0/1 INFO :: Iteration=1551, Time=3.538824e-01, dt=2.399865e-04, max(KE)=178.363639
+2026-07-06 06:13:16,622 __main__ 0/1 INFO :: Iteration=1561, Time=3.562823e-01, dt=2.399865e-04, max(KE)=173.691222
+2026-07-06 06:15:51,296 __main__ 0/1 INFO :: Iteration=1571, Time=3.586945e-01, dt=2.523508e-04, max(KE)=168.263824
+2026-07-06 06:17:12,065 __main__ 0/1 INFO :: Iteration=1581, Time=3.612180e-01, dt=2.523508e-04, max(KE)=161.572628
+2026-07-06 06:18:33,167 __main__ 0/1 INFO :: Iteration=1591, Time=3.637415e-01, dt=2.523508e-04, max(KE)=154.562461
+2026-07-06 06:21:12,138 __main__ 0/1 INFO :: Iteration=1601, Time=3.663039e-01, dt=2.653006e-04, max(KE)=146.546172
+2026-07-06 06:22:33,881 __main__ 0/1 INFO :: Iteration=1611, Time=3.689569e-01, dt=2.653006e-04, max(KE)=137.915084
+2026-07-06 06:25:10,608 __main__ 0/1 INFO :: Iteration=1621, Time=3.716238e-01, dt=2.791841e-04, max(KE)=138.165558
+2026-07-06 06:26:33,345 __main__ 0/1 INFO :: Iteration=1631, Time=3.744156e-01, dt=2.791841e-04, max(KE)=138.454120
+2026-07-06 06:27:54,139 __main__ 0/1 INFO :: Iteration=1641, Time=3.772075e-01, dt=2.791841e-04, max(KE)=136.549294
+2026-07-06 06:29:12,976 __main__ 0/1 INFO :: Iteration=1651, Time=3.799993e-01, dt=2.791841e-04, max(KE)=133.341139
+2026-07-06 06:31:46,519 __main__ 0/1 INFO :: Iteration=1661, Time=3.828477e-01, dt=2.933159e-04, max(KE)=128.811506
+2026-07-06 06:33:04,771 __main__ 0/1 INFO :: Iteration=1671, Time=3.857808e-01, dt=2.933159e-04, max(KE)=123.198470
+2026-07-06 06:35:41,283 __main__ 0/1 INFO :: Iteration=1681, Time=3.887595e-01, dt=3.084791e-04, max(KE)=117.592929
+2026-07-06 06:37:03,633 __main__ 0/1 INFO :: Iteration=1691, Time=3.918443e-01, dt=3.084791e-04, max(KE)=112.129360
+2026-07-06 06:39:42,741 __main__ 0/1 INFO :: Iteration=1701, Time=3.949946e-01, dt=3.248565e-04, max(KE)=107.127924
+2026-07-06 06:41:02,938 __main__ 0/1 INFO :: Iteration=1711, Time=3.982431e-01, dt=3.248565e-04, max(KE)=102.793289
+2026-07-06 06:43:42,541 __main__ 0/1 INFO :: Iteration=1721, Time=4.015739e-01, dt=3.412989e-04, max(KE)=101.099265
+2026-07-06 06:45:03,409 __main__ 0/1 INFO :: Iteration=1731, Time=4.049869e-01, dt=3.412989e-04, max(KE)=100.955653
+2026-07-06 06:46:24,576 __main__ 0/1 INFO :: Iteration=1741, Time=4.083999e-01, dt=3.412989e-04, max(KE)=97.481348
+2026-07-06 06:47:44,291 __main__ 0/1 INFO :: Iteration=1751, Time=4.118129e-01, dt=3.412989e-04, max(KE)=91.175245
+2026-07-06 06:49:07,313 __main__ 0/1 INFO :: Iteration=1761, Time=4.152259e-01, dt=3.412989e-04, max(KE)=88.848232
+2026-07-06 06:50:27,810 __main__ 0/1 INFO :: Iteration=1771, Time=4.186389e-01, dt=3.412989e-04, max(KE)=86.868221
+2026-07-06 06:53:05,123 __main__ 0/1 INFO :: Iteration=1781, Time=4.221559e-01, dt=3.586414e-04, max(KE)=85.095648
+2026-07-06 06:54:28,058 __main__ 0/1 INFO :: Iteration=1791, Time=4.257423e-01, dt=3.586414e-04, max(KE)=82.946598
+2026-07-06 06:57:10,063 __main__ 0/1 INFO :: Iteration=1801, Time=4.294574e-01, dt=3.770219e-04, max(KE)=80.105317
+2026-07-06 06:59:50,493 __main__ 0/1 INFO :: Iteration=1811, Time=4.332682e-01, dt=3.973097e-04, max(KE)=76.297687
+2026-07-06 07:01:12,486 __main__ 0/1 INFO :: Iteration=1821, Time=4.372413e-01, dt=3.973097e-04, max(KE)=71.429865
+2026-07-06 07:03:48,934 __main__ 0/1 INFO :: Iteration=1831, Time=4.413778e-01, dt=4.177334e-04, max(KE)=65.396879
+2026-07-06 07:05:09,432 __main__ 0/1 INFO :: Iteration=1841, Time=4.455551e-01, dt=4.177334e-04, max(KE)=58.620037
+2026-07-06 07:07:47,181 __main__ 0/1 INFO :: Iteration=1851, Time=4.499455e-01, dt=4.390357e-04, max(KE)=51.015953
+2026-07-06 07:09:05,887 __main__ 0/1 INFO :: Iteration=1861, Time=4.543358e-01, dt=4.390357e-04, max(KE)=49.817408
+2026-07-06 07:11:42,335 __main__ 0/1 INFO :: Iteration=1871, Time=4.588154e-01, dt=4.613287e-04, max(KE)=48.758633
+2026-07-06 07:13:04,347 __main__ 0/1 INFO :: Iteration=1881, Time=4.634286e-01, dt=4.613287e-04, max(KE)=47.216607
+2026-07-06 07:15:42,369 __main__ 0/1 INFO :: Iteration=1891, Time=4.681366e-01, dt=4.849953e-04, max(KE)=45.222190
+2026-07-06 07:18:24,540 __main__ 0/1 INFO :: Iteration=1901, Time=4.730128e-01, dt=5.111984e-04, max(KE)=42.251322
+2026-07-06 07:21:04,997 __main__ 0/1 INFO :: Iteration=1911, Time=4.781783e-01, dt=5.379838e-04, max(KE)=38.171658
+2026-07-06 07:23:44,983 __main__ 0/1 INFO :: Iteration=1921, Time=4.836974e-01, dt=5.658322e-04, max(KE)=32.971655
+2026-07-06 07:27:44,515 __main__ 0/1 INFO :: Iteration=1931, Time=4.897526e-01, dt=6.270852e-04, max(KE)=27.116779
+2026-07-06 07:31:40,489 __main__ 0/1 INFO :: Iteration=1941, Time=4.964316e-01, dt=6.956486e-04, max(KE)=22.881774
+2026-07-06 07:36:55,498 __main__ 0/1 INFO :: Iteration=1951, Time=5.039157e-01, dt=8.175940e-04, max(KE)=19.152554
+2026-07-06 07:43:28,455 __main__ 0/1 INFO :: Iteration=1961, Time=5.130157e-01, dt=1.032694e-03, max(KE)=13.965002
+2026-07-06 07:48:47,854 __main__ 0/1 INFO :: Iteration=1971, Time=5.244076e-01, dt=1.254364e-03, max(KE)=8.758535
+2026-07-06 07:50:08,777 __main__ 0/1 INFO :: Iteration=1981, Time=5.369512e-01, dt=1.254364e-03, max(KE)=8.054870
+2026-07-06 07:55:28,072 __main__ 0/1 INFO :: Iteration=1991, Time=5.502261e-01, dt=1.506344e-03, max(KE)=5.049613
+2026-07-06 08:03:31,080 __main__ 0/1 INFO :: Iteration=2001, Time=5.687000e-01, dt=2.113813e-03, max(KE)=2.584528
+2026-07-06 08:08:57,767 __main__ 0/1 INFO :: Iteration=2011, Time=5.923673e-01, dt=2.516941e-03, max(KE)=2.332533
+2026-07-06 08:15:38,368 __main__ 0/1 INFO :: Iteration=2021, Time=6.172130e-01, dt=2.915414e-03, max(KE)=1.263192
+2026-07-06 08:29:56,041 __main__ 0/1 INFO :: Iteration=2031, Time=6.725059e-01, dt=6.917288e-03, max(KE)=0.312847
+2026-07-06 08:36:31,073 __main__ 0/1 INFO :: Iteration=2041, Time=8.184981e-01, dt=1.925561e-02, max(KE)=0.003293
+2026-07-06 08:37:55,144 __main__ 0/1 INFO :: Iteration=2051, Time=1.011054e+00, dt=1.925561e-02, max(KE)=0.000002
+2026-07-06 08:39:22,449 __main__ 0/1 INFO :: Iteration=2061, Time=1.203610e+00, dt=1.925561e-02, max(KE)=0.000000
+2026-07-06 08:40:46,674 __main__ 0/1 INFO :: Iteration=2071, Time=1.396166e+00, dt=1.925561e-02, max(KE)=0.000000
+2026-07-06 08:42:11,368 __main__ 0/1 INFO :: Iteration=2081, Time=1.588722e+00, dt=1.925561e-02, max(KE)=0.000000
+2026-07-06 08:43:34,910 __main__ 0/1 INFO :: Iteration=2091, Time=1.781278e+00, dt=1.925561e-02, max(KE)=0.000000
+2026-07-06 08:45:01,713 __main__ 0/1 INFO :: Iteration=2101, Time=1.973835e+00, dt=1.925561e-02, max(KE)=0.000000
+2026-07-06 08:46:30,269 __main__ 0/1 INFO :: Iteration=2111, Time=2.166391e+00, dt=1.925561e-02, max(KE)=0.000000
+2026-07-06 08:47:54,948 __main__ 0/1 INFO :: Iteration=2121, Time=2.358947e+00, dt=1.925561e-02, max(KE)=0.000000
+2026-07-06 08:49:20,101 __main__ 0/1 INFO :: Iteration=2131, Time=2.551503e+00, dt=1.925561e-02, max(KE)=0.000000
+2026-07-06 08:50:44,565 __main__ 0/1 INFO :: Iteration=2141, Time=2.744059e+00, dt=1.925561e-02, max(KE)=0.000000
+2026-07-06 08:52:07,447 __main__ 0/1 INFO :: Iteration=2151, Time=2.936615e+00, dt=1.925561e-02, max(KE)=0.000000
+2026-07-06 08:53:32,128 __main__ 0/1 INFO :: Iteration=2161, Time=3.129171e+00, dt=1.925561e-02, max(KE)=0.000000
+2026-07-06 08:54:56,455 __main__ 0/1 INFO :: Iteration=2171, Time=3.321727e+00, dt=1.925561e-02, max(KE)=0.000000
+2026-07-06 08:56:20,731 __main__ 0/1 INFO :: Iteration=2181, Time=3.514283e+00, dt=1.925561e-02, max(KE)=0.000000
+2026-07-06 08:57:45,150 __main__ 0/1 INFO :: Iteration=2191, Time=3.706839e+00, dt=1.925561e-02, max(KE)=0.000000
+2026-07-06 08:59:12,805 __main__ 0/1 INFO :: Iteration=2201, Time=3.899395e+00, dt=1.925561e-02, max(KE)=0.000000
+2026-07-06 09:00:39,561 __main__ 0/1 INFO :: Iteration=2211, Time=4.091951e+00, dt=1.925561e-02, max(KE)=0.000000
+2026-07-06 09:02:03,599 __main__ 0/1 INFO :: Iteration=2221, Time=4.284507e+00, dt=1.925561e-02, max(KE)=0.000000
+2026-07-06 09:03:28,036 __main__ 0/1 INFO :: Iteration=2231, Time=4.477063e+00, dt=1.925561e-02, max(KE)=0.000000
+2026-07-06 09:04:55,725 __main__ 0/1 INFO :: Iteration=2241, Time=4.669620e+00, dt=1.925561e-02, max(KE)=0.000000
+2026-07-06 09:06:19,157 __main__ 0/1 INFO :: Iteration=2251, Time=4.862176e+00, dt=1.925561e-02, max(KE)=0.000000
+2026-07-06 09:07:42,622 __main__ 0/1 INFO :: Iteration=2261, Time=5.054732e+00, dt=1.925561e-02, max(KE)=0.000000
+2026-07-06 09:09:05,585 __main__ 0/1 INFO :: Iteration=2271, Time=5.247288e+00, dt=1.925561e-02, max(KE)=0.000000
+2026-07-06 09:10:27,515 __main__ 0/1 INFO :: Iteration=2281, Time=5.439844e+00, dt=1.925561e-02, max(KE)=0.000000
+2026-07-06 09:11:52,093 __main__ 0/1 INFO :: Iteration=2291, Time=5.632400e+00, dt=1.925561e-02, max(KE)=0.000000
+2026-07-06 09:13:18,590 __main__ 0/1 INFO :: Iteration=2301, Time=5.824956e+00, dt=1.925561e-02, max(KE)=0.000000
+2026-07-06 09:14:42,915 __main__ 0/1 INFO :: Iteration=2311, Time=6.017512e+00, dt=1.925561e-02, max(KE)=0.000000
+2026-07-06 09:16:07,296 __main__ 0/1 INFO :: Iteration=2321, Time=6.210068e+00, dt=1.925561e-02, max(KE)=0.000000
+2026-07-06 09:17:31,406 __main__ 0/1 INFO :: Iteration=2331, Time=6.402624e+00, dt=1.925561e-02, max(KE)=0.000000
+2026-07-06 09:18:55,301 __main__ 0/1 INFO :: Iteration=2341, Time=6.595180e+00, dt=1.925561e-02, max(KE)=0.000000
+2026-07-06 09:20:20,126 __main__ 0/1 INFO :: Iteration=2351, Time=6.787736e+00, dt=1.925561e-02, max(KE)=0.000000
+2026-07-06 09:21:43,258 __main__ 0/1 INFO :: Iteration=2361, Time=6.980292e+00, dt=1.925561e-02, max(KE)=0.000000
+2026-07-06 09:23:08,013 __main__ 0/1 INFO :: Iteration=2371, Time=7.172848e+00, dt=1.925561e-02, max(KE)=0.000000
+2026-07-06 09:24:30,732 __main__ 0/1 INFO :: Iteration=2381, Time=7.365405e+00, dt=1.925561e-02, max(KE)=0.000000
+2026-07-06 09:25:55,096 __main__ 0/1 INFO :: Iteration=2391, Time=7.557961e+00, dt=1.925561e-02, max(KE)=0.000000
+2026-07-06 09:27:23,226 __main__ 0/1 INFO :: Iteration=2401, Time=7.750517e+00, dt=1.925561e-02, max(KE)=0.000000
+2026-07-06 09:28:48,833 __main__ 0/1 INFO :: Iteration=2411, Time=7.943073e+00, dt=1.925561e-02, max(KE)=0.000000
+2026-07-06 09:30:13,888 __main__ 0/1 INFO :: Iteration=2421, Time=8.135629e+00, dt=1.925561e-02, max(KE)=0.000000
+2026-07-06 09:31:36,141 __main__ 0/1 INFO :: Iteration=2431, Time=8.328185e+00, dt=1.925561e-02, max(KE)=0.000000
+2026-07-06 09:33:01,002 __main__ 0/1 INFO :: Iteration=2441, Time=8.520741e+00, dt=1.925561e-02, max(KE)=0.000000
+2026-07-06 09:34:25,748 __main__ 0/1 INFO :: Iteration=2451, Time=8.713297e+00, dt=1.925561e-02, max(KE)=0.000000
+2026-07-06 09:35:47,983 __main__ 0/1 INFO :: Iteration=2461, Time=8.905853e+00, dt=1.925561e-02, max(KE)=0.000000
+2026-07-06 09:37:12,115 __main__ 0/1 INFO :: Iteration=2471, Time=9.098409e+00, dt=1.925561e-02, max(KE)=0.000000
+2026-07-06 09:38:35,356 __main__ 0/1 INFO :: Iteration=2481, Time=9.290965e+00, dt=1.925561e-02, max(KE)=0.000000
+2026-07-06 09:39:58,997 __main__ 0/1 INFO :: Iteration=2491, Time=9.483521e+00, dt=1.925561e-02, max(KE)=0.000000
+2026-07-06 09:41:28,647 __main__ 0/1 INFO :: Iteration=2501, Time=9.676077e+00, dt=1.925561e-02, max(KE)=0.000000
+2026-07-06 09:42:53,336 __main__ 0/1 INFO :: Iteration=2511, Time=9.868633e+00, dt=1.925561e-02, max(KE)=0.000000
+2026-07-06 09:44:18,793 __main__ 0/1 INFO :: Iteration=2521, Time=1.006119e+01, dt=1.925561e-02, max(KE)=0.000000
+2026-07-06 09:45:44,315 __main__ 0/1 INFO :: Iteration=2531, Time=1.025375e+01, dt=1.925561e-02, max(KE)=0.000000
+2026-07-06 09:47:07,604 __main__ 0/1 INFO :: Iteration=2541, Time=1.044630e+01, dt=1.925561e-02, max(KE)=0.000000
+2026-07-06 09:48:32,070 __main__ 0/1 INFO :: Iteration=2551, Time=1.063886e+01, dt=1.925561e-02, max(KE)=0.000000
+2026-07-06 09:49:58,026 __main__ 0/1 INFO :: Iteration=2561, Time=1.083141e+01, dt=1.925561e-02, max(KE)=0.000000
+2026-07-06 09:51:22,939 __main__ 0/1 INFO :: Iteration=2571, Time=1.102397e+01, dt=1.925561e-02, max(KE)=0.000000
+2026-07-06 09:52:47,547 __main__ 0/1 INFO :: Iteration=2581, Time=1.121653e+01, dt=1.925561e-02, max(KE)=0.000000
+2026-07-06 09:54:12,557 __main__ 0/1 INFO :: Iteration=2591, Time=1.140908e+01, dt=1.925561e-02, max(KE)=0.000000
+2026-07-06 09:55:40,981 __main__ 0/1 INFO :: Iteration=2601, Time=1.160164e+01, dt=1.925561e-02, max(KE)=0.000000
+2026-07-06 09:57:04,687 __main__ 0/1 INFO :: Iteration=2611, Time=1.179419e+01, dt=1.925561e-02, max(KE)=0.000000
+2026-07-06 09:58:30,721 __main__ 0/1 INFO :: Iteration=2621, Time=1.198675e+01, dt=1.925561e-02, max(KE)=0.000000

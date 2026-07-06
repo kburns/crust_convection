@@ -1,5 +1,5 @@
 #!/bin/bash 
-#SBATCH -J msh-md9
+#SBATCH -J mCRa-11k
 #SBATCH -t 48:00:00
 ## SBATCH --mem-per-cpu 4000
 #SBATCH -N 1 -n 32 --mem=0 -p edr
@@ -33,5 +33,5 @@ echo " "
 
 source activate dedalus-test
 
-#python3 m3d_shell_base.py
-python3 m3d_shell_minidrag_9.py
+#python3 m3d_xyperiodic_gradualCRa_base.py
+python3 m3d_xyperiodic_gradualCRa_11k.py
