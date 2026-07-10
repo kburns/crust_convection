@@ -1,0 +1,32 @@
+Currently Loaded Modulefiles:
+  1) slurm/20161123      2) anaconda3/2020.11
+Traceback (most recent call last):
+  File "/net/fs06/d0/dabdulah/GFD_PROJECT/crust_convection/mantle2D_surefireWC2/m2d_WC2_CRa30k.py", line 116, in <module>
+    solver.step(timestep)
+  File "/home/dabdulah/.conda/envs/dedalus-test/lib/python3.11/site-packages/dedalus/core/solvers.py", line 620, in step
+    self.timestepper.step(dt, wall_elapsed)
+  File "/home/dabdulah/.conda/envs/dedalus-test/lib/python3.11/site-packages/dedalus/core/timesteppers.py", line 596, in step
+    evaluator.evaluate_scheduled(wall_time=wall_time, timestep=dt, sim_time=solver.sim_time, iteration=iteration)
+  File "/home/dabdulah/.conda/envs/dedalus-test/lib/python3.11/site-packages/dedalus/core/evaluator.py", line 109, in evaluate_scheduled
+    self.evaluate_handlers(scheduled_handlers, wall_time=wall_time, sim_time=sim_time, iteration=iteration, **kw)
+  File "/home/dabdulah/.conda/envs/dedalus-test/lib/python3.11/site-packages/dedalus/core/evaluator.py", line 165, in evaluate_handlers
+    handler.process(**kw)
+  File "/home/dabdulah/.conda/envs/dedalus-test/lib/python3.11/site-packages/dedalus/core/evaluator.py", line 565, in process
+    file = self.get_file()
+           ^^^^^^^^^^^^^^^
+  File "/home/dabdulah/.conda/envs/dedalus-test/lib/python3.11/site-packages/dedalus/core/evaluator.py", line 481, in get_file
+    return self.open_file(**kw)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/dabdulah/.conda/envs/dedalus-test/lib/python3.11/site-packages/dedalus/core/evaluator.py", line 607, in open_file
+    return h5py.File(str(self.current_file), mode)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dabdulah/.conda/envs/dedalus-test/lib/python3.11/site-packages/h5py/_hl/files.py", line 567, in __init__
+    fid = make_fid(name, mode, userblock_size, fapl, fcpl, swmr=swmr)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dabdulah/.conda/envs/dedalus-test/lib/python3.11/site-packages/h5py/_hl/files.py", line 233, in make_fid
+    fid = h5f.open(name, h5f.ACC_RDWR, fapl=fapl)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 106, in h5py.h5f.open
+BlockingIOError: [Errno 11] Unable to synchronously open file (unable to lock file, errno = 11, error message = 'Resource temporarily unavailable')

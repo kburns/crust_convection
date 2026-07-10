@@ -1,0 +1,149 @@
+run begins at: Wed Jul 8 15:36:29 EDT 2026
+Directory: /home/dabdulah/fs06/d0/dabdulah/GFD_PROJECT/crust_convection/mantle3D_xyperiodic_erosion_v2
+Your job is running on node(s):
+c074
+Cores per node:
+32
+list of loaded modules:
+ 
+2026-07-08 15:36:36,568 subsystems 0/1 INFO :: Building subproblem matrices 1/4096 (~0%) Elapsed: 1s, Remaining: 41m 12s, Rate: 1.7e+00/s
+2026-07-08 15:36:46,141 subsystems 0/1 INFO :: Building subproblem matrices 34/4096 (~1%) Elapsed: 10s, Remaining: 20m 16s, Rate: 3.3e+00/s
+2026-07-08 15:36:55,994 subsystems 0/1 INFO :: Building subproblem matrices 68/4096 (~2%) Elapsed: 20s, Remaining: 19m 47s, Rate: 3.4e+00/s
+2026-07-08 15:37:06,056 subsystems 0/1 INFO :: Building subproblem matrices 102/4096 (~2%) Elapsed: 30s, Remaining: 19m 38s, Rate: 3.4e+00/s
+2026-07-08 15:37:16,128 subsystems 0/1 INFO :: Building subproblem matrices 136/4096 (~3%) Elapsed: 40s, Remaining: 19m 29s, Rate: 3.4e+00/s
+2026-07-08 15:37:26,136 subsystems 0/1 INFO :: Building subproblem matrices 170/4096 (~4%) Elapsed: 50s, Remaining: 19m 19s, Rate: 3.4e+00/s
+2026-07-08 15:37:36,196 subsystems 0/1 INFO :: Building subproblem matrices 204/4096 (~5%) Elapsed: 1m 00s, Remaining: 19m 09s, Rate: 3.4e+00/s
+2026-07-08 15:37:46,204 subsystems 0/1 INFO :: Building subproblem matrices 238/4096 (~6%) Elapsed: 1m 10s, Remaining: 18m 59s, Rate: 3.4e+00/s
+2026-07-08 15:37:56,200 subsystems 0/1 INFO :: Building subproblem matrices 272/4096 (~7%) Elapsed: 1m 20s, Remaining: 18m 48s, Rate: 3.4e+00/s
+2026-07-08 15:38:06,147 subsystems 0/1 INFO :: Building subproblem matrices 304/4096 (~7%) Elapsed: 1m 30s, Remaining: 18m 45s, Rate: 3.4e+00/s
+2026-07-08 15:38:16,157 subsystems 0/1 INFO :: Building subproblem matrices 337/4096 (~8%) Elapsed: 1m 40s, Remaining: 18m 38s, Rate: 3.4e+00/s
+2026-07-08 15:38:26,070 subsystems 0/1 INFO :: Building subproblem matrices 369/4096 (~9%) Elapsed: 1m 50s, Remaining: 18m 32s, Rate: 3.4e+00/s
+2026-07-08 15:38:35,968 subsystems 0/1 INFO :: Building subproblem matrices 402/4096 (~10%) Elapsed: 2m 00s, Remaining: 18m 23s, Rate: 3.3e+00/s
+2026-07-08 15:38:38,614 subsystems 0/1 INFO :: Building subproblem matrices 410/4096 (~10%) Elapsed: 2m 03s, Remaining: 18m 23s, Rate: 3.3e+00/s
+2026-07-08 15:38:46,375 subsystems 0/1 INFO :: Building subproblem matrices 435/4096 (~11%) Elapsed: 2m 10s, Remaining: 18m 18s, Rate: 3.3e+00/s
+2026-07-08 15:38:56,215 subsystems 0/1 INFO :: Building subproblem matrices 467/4096 (~11%) Elapsed: 2m 20s, Remaining: 18m 10s, Rate: 3.3e+00/s
+2026-07-08 15:39:06,443 subsystems 0/1 INFO :: Building subproblem matrices 500/4096 (~12%) Elapsed: 2m 30s, Remaining: 18m 02s, Rate: 3.3e+00/s
+2026-07-08 15:39:16,000 subsystems 0/1 INFO :: Building subproblem matrices 531/4096 (~13%) Elapsed: 2m 40s, Remaining: 17m 54s, Rate: 3.3e+00/s
+2026-07-08 15:39:26,020 subsystems 0/1 INFO :: Building subproblem matrices 563/4096 (~14%) Elapsed: 2m 50s, Remaining: 17m 47s, Rate: 3.3e+00/s
+2026-07-08 15:39:36,139 subsystems 0/1 INFO :: Building subproblem matrices 597/4096 (~15%) Elapsed: 3m 00s, Remaining: 17m 36s, Rate: 3.3e+00/s
+2026-07-08 15:39:46,097 subsystems 0/1 INFO :: Building subproblem matrices 628/4096 (~15%) Elapsed: 3m 10s, Remaining: 17m 30s, Rate: 3.3e+00/s
+2026-07-08 15:39:56,089 subsystems 0/1 INFO :: Building subproblem matrices 660/4096 (~16%) Elapsed: 3m 20s, Remaining: 17m 22s, Rate: 3.3e+00/s
+2026-07-08 15:40:06,015 subsystems 0/1 INFO :: Building subproblem matrices 691/4096 (~17%) Elapsed: 3m 30s, Remaining: 17m 15s, Rate: 3.3e+00/s
+2026-07-08 15:40:16,016 subsystems 0/1 INFO :: Building subproblem matrices 723/4096 (~18%) Elapsed: 3m 40s, Remaining: 17m 07s, Rate: 3.3e+00/s
+2026-07-08 15:40:26,113 subsystems 0/1 INFO :: Building subproblem matrices 755/4096 (~18%) Elapsed: 3m 50s, Remaining: 16m 58s, Rate: 3.3e+00/s
+2026-07-08 15:40:36,026 subsystems 0/1 INFO :: Building subproblem matrices 786/4096 (~19%) Elapsed: 4m 00s, Remaining: 16m 51s, Rate: 3.3e+00/s
+2026-07-08 15:40:46,144 subsystems 0/1 INFO :: Building subproblem matrices 819/4096 (~20%) Elapsed: 4m 10s, Remaining: 16m 41s, Rate: 3.3e+00/s
+2026-07-08 15:40:46,559 subsystems 0/1 INFO :: Building subproblem matrices 820/4096 (~20%) Elapsed: 4m 11s, Remaining: 16m 41s, Rate: 3.3e+00/s
+2026-07-08 15:40:56,242 subsystems 0/1 INFO :: Building subproblem matrices 852/4096 (~21%) Elapsed: 4m 20s, Remaining: 16m 31s, Rate: 3.3e+00/s
+2026-07-08 15:41:06,141 subsystems 0/1 INFO :: Building subproblem matrices 885/4096 (~22%) Elapsed: 4m 30s, Remaining: 16m 20s, Rate: 3.3e+00/s
+2026-07-08 15:41:16,032 subsystems 0/1 INFO :: Building subproblem matrices 918/4096 (~22%) Elapsed: 4m 40s, Remaining: 16m 10s, Rate: 3.3e+00/s
+2026-07-08 15:41:26,232 subsystems 0/1 INFO :: Building subproblem matrices 952/4096 (~23%) Elapsed: 4m 50s, Remaining: 15m 59s, Rate: 3.3e+00/s
+2026-07-08 15:41:36,132 subsystems 0/1 INFO :: Building subproblem matrices 985/4096 (~24%) Elapsed: 5m 00s, Remaining: 15m 48s, Rate: 3.3e+00/s
+2026-07-08 15:41:46,056 subsystems 0/1 INFO :: Building subproblem matrices 1018/4096 (~25%) Elapsed: 5m 10s, Remaining: 15m 38s, Rate: 3.3e+00/s
+2026-07-08 15:41:55,978 subsystems 0/1 INFO :: Building subproblem matrices 1050/4096 (~26%) Elapsed: 5m 20s, Remaining: 15m 28s, Rate: 3.3e+00/s
+2026-07-08 15:42:06,156 subsystems 0/1 INFO :: Building subproblem matrices 1084/4096 (~26%) Elapsed: 5m 30s, Remaining: 15m 17s, Rate: 3.3e+00/s
+2026-07-08 15:42:16,038 subsystems 0/1 INFO :: Building subproblem matrices 1117/4096 (~27%) Elapsed: 5m 40s, Remaining: 15m 07s, Rate: 3.3e+00/s
+2026-07-08 15:42:26,233 subsystems 0/1 INFO :: Building subproblem matrices 1151/4096 (~28%) Elapsed: 5m 50s, Remaining: 14m 56s, Rate: 3.3e+00/s
+2026-07-08 15:42:36,113 subsystems 0/1 INFO :: Building subproblem matrices 1184/4096 (~29%) Elapsed: 6m 00s, Remaining: 14m 46s, Rate: 3.3e+00/s
+2026-07-08 15:42:46,002 subsystems 0/1 INFO :: Building subproblem matrices 1217/4096 (~30%) Elapsed: 6m 10s, Remaining: 14m 35s, Rate: 3.3e+00/s
+2026-07-08 15:42:49,906 subsystems 0/1 INFO :: Building subproblem matrices 1230/4096 (~30%) Elapsed: 6m 14s, Remaining: 14m 31s, Rate: 3.3e+00/s
+2026-07-08 15:42:56,212 subsystems 0/1 INFO :: Building subproblem matrices 1251/4096 (~31%) Elapsed: 6m 20s, Remaining: 14m 25s, Rate: 3.3e+00/s
+2026-07-08 15:43:06,092 subsystems 0/1 INFO :: Building subproblem matrices 1284/4096 (~31%) Elapsed: 6m 30s, Remaining: 14m 14s, Rate: 3.3e+00/s
+2026-07-08 15:43:16,136 subsystems 0/1 INFO :: Building subproblem matrices 1316/4096 (~32%) Elapsed: 6m 40s, Remaining: 14m 05s, Rate: 3.3e+00/s
+2026-07-08 15:43:26,021 subsystems 0/1 INFO :: Building subproblem matrices 1349/4096 (~33%) Elapsed: 6m 50s, Remaining: 13m 55s, Rate: 3.3e+00/s
+2026-07-08 15:43:36,225 subsystems 0/1 INFO :: Building subproblem matrices 1383/4096 (~34%) Elapsed: 7m 00s, Remaining: 13m 44s, Rate: 3.3e+00/s
+2026-07-08 15:43:46,096 subsystems 0/1 INFO :: Building subproblem matrices 1416/4096 (~35%) Elapsed: 7m 10s, Remaining: 13m 34s, Rate: 3.3e+00/s
+2026-07-08 15:43:55,989 subsystems 0/1 INFO :: Building subproblem matrices 1449/4096 (~35%) Elapsed: 7m 20s, Remaining: 13m 24s, Rate: 3.3e+00/s
+2026-07-08 15:44:06,161 subsystems 0/1 INFO :: Building subproblem matrices 1483/4096 (~36%) Elapsed: 7m 30s, Remaining: 13m 13s, Rate: 3.3e+00/s
+2026-07-08 15:44:16,238 subsystems 0/1 INFO :: Building subproblem matrices 1516/4096 (~37%) Elapsed: 7m 40s, Remaining: 13m 03s, Rate: 3.3e+00/s
+2026-07-08 15:44:26,161 subsystems 0/1 INFO :: Building subproblem matrices 1549/4096 (~38%) Elapsed: 7m 50s, Remaining: 12m 53s, Rate: 3.3e+00/s
+2026-07-08 15:44:36,010 subsystems 0/1 INFO :: Building subproblem matrices 1581/4096 (~39%) Elapsed: 8m 00s, Remaining: 12m 44s, Rate: 3.3e+00/s
+2026-07-08 15:44:46,230 subsystems 0/1 INFO :: Building subproblem matrices 1615/4096 (~39%) Elapsed: 8m 10s, Remaining: 12m 33s, Rate: 3.3e+00/s
+2026-07-08 15:44:53,745 subsystems 0/1 INFO :: Building subproblem matrices 1640/4096 (~40%) Elapsed: 8m 18s, Remaining: 12m 25s, Rate: 3.3e+00/s
+2026-07-08 15:44:56,148 subsystems 0/1 INFO :: Building subproblem matrices 1648/4096 (~40%) Elapsed: 8m 20s, Remaining: 12m 23s, Rate: 3.3e+00/s
+2026-07-08 15:45:06,010 subsystems 0/1 INFO :: Building subproblem matrices 1679/4096 (~41%) Elapsed: 8m 30s, Remaining: 12m 14s, Rate: 3.3e+00/s
+2026-07-08 15:45:16,235 subsystems 0/1 INFO :: Building subproblem matrices 1712/4096 (~42%) Elapsed: 8m 40s, Remaining: 12m 04s, Rate: 3.3e+00/s
+2026-07-08 15:45:26,156 subsystems 0/1 INFO :: Building subproblem matrices 1745/4096 (~43%) Elapsed: 8m 50s, Remaining: 11m 54s, Rate: 3.3e+00/s
+2026-07-08 15:45:36,147 subsystems 0/1 INFO :: Building subproblem matrices 1777/4096 (~43%) Elapsed: 9m 00s, Remaining: 11m 45s, Rate: 3.3e+00/s
+2026-07-08 15:45:46,248 subsystems 0/1 INFO :: Building subproblem matrices 1810/4096 (~44%) Elapsed: 9m 10s, Remaining: 11m 35s, Rate: 3.3e+00/s
+2026-07-08 15:45:56,150 subsystems 0/1 INFO :: Building subproblem matrices 1843/4096 (~45%) Elapsed: 9m 20s, Remaining: 11m 25s, Rate: 3.3e+00/s
+2026-07-08 15:46:06,153 subsystems 0/1 INFO :: Building subproblem matrices 1876/4096 (~46%) Elapsed: 9m 30s, Remaining: 11m 15s, Rate: 3.3e+00/s
+2026-07-08 15:46:16,166 subsystems 0/1 INFO :: Building subproblem matrices 1908/4096 (~47%) Elapsed: 9m 40s, Remaining: 11m 05s, Rate: 3.3e+00/s
+2026-07-08 15:46:26,038 subsystems 0/1 INFO :: Building subproblem matrices 1940/4096 (~47%) Elapsed: 9m 50s, Remaining: 10m 56s, Rate: 3.3e+00/s
+2026-07-08 15:46:36,231 subsystems 0/1 INFO :: Building subproblem matrices 1973/4096 (~48%) Elapsed: 10m 00s, Remaining: 10m 46s, Rate: 3.3e+00/s
+2026-07-08 15:46:46,171 subsystems 0/1 INFO :: Building subproblem matrices 2005/4096 (~49%) Elapsed: 10m 10s, Remaining: 10m 36s, Rate: 3.3e+00/s
+2026-07-08 15:46:56,263 subsystems 0/1 INFO :: Building subproblem matrices 2038/4096 (~50%) Elapsed: 10m 20s, Remaining: 10m 26s, Rate: 3.3e+00/s
+2026-07-08 15:46:59,848 subsystems 0/1 INFO :: Building subproblem matrices 2050/4096 (~50%) Elapsed: 10m 24s, Remaining: 10m 23s, Rate: 3.3e+00/s
+2026-07-08 15:47:06,148 subsystems 0/1 INFO :: Building subproblem matrices 2071/4096 (~51%) Elapsed: 10m 30s, Remaining: 10m 16s, Rate: 3.3e+00/s
+2026-07-08 15:47:16,114 subsystems 0/1 INFO :: Building subproblem matrices 2102/4096 (~51%) Elapsed: 10m 40s, Remaining: 10m 07s, Rate: 3.3e+00/s
+2026-07-08 15:47:26,132 subsystems 0/1 INFO :: Building subproblem matrices 2134/4096 (~52%) Elapsed: 10m 50s, Remaining: 9m 58s, Rate: 3.3e+00/s
+2026-07-08 15:47:35,989 subsystems 0/1 INFO :: Building subproblem matrices 2165/4096 (~53%) Elapsed: 11m 00s, Remaining: 9m 49s, Rate: 3.3e+00/s
+2026-07-08 15:47:46,132 subsystems 0/1 INFO :: Building subproblem matrices 2199/4096 (~54%) Elapsed: 11m 10s, Remaining: 9m 38s, Rate: 3.3e+00/s
+2026-07-08 15:47:55,969 subsystems 0/1 INFO :: Building subproblem matrices 2230/4096 (~54%) Elapsed: 11m 20s, Remaining: 9m 29s, Rate: 3.3e+00/s
+2026-07-08 15:48:06,122 subsystems 0/1 INFO :: Building subproblem matrices 2262/4096 (~55%) Elapsed: 11m 30s, Remaining: 9m 20s, Rate: 3.3e+00/s
+2026-07-08 15:48:15,990 subsystems 0/1 INFO :: Building subproblem matrices 2295/4096 (~56%) Elapsed: 11m 40s, Remaining: 9m 09s, Rate: 3.3e+00/s
+2026-07-08 15:48:26,063 subsystems 0/1 INFO :: Building subproblem matrices 2327/4096 (~57%) Elapsed: 11m 50s, Remaining: 9m 00s, Rate: 3.3e+00/s
+2026-07-08 15:48:36,066 subsystems 0/1 INFO :: Building subproblem matrices 2359/4096 (~58%) Elapsed: 12m 00s, Remaining: 8m 50s, Rate: 3.3e+00/s
+2026-07-08 15:48:45,977 subsystems 0/1 INFO :: Building subproblem matrices 2391/4096 (~58%) Elapsed: 12m 10s, Remaining: 8m 41s, Rate: 3.3e+00/s
+2026-07-08 15:48:56,126 subsystems 0/1 INFO :: Building subproblem matrices 2424/4096 (~59%) Elapsed: 12m 20s, Remaining: 8m 31s, Rate: 3.3e+00/s
+2026-07-08 15:49:06,016 subsystems 0/1 INFO :: Building subproblem matrices 2456/4096 (~60%) Elapsed: 12m 30s, Remaining: 8m 21s, Rate: 3.3e+00/s
+2026-07-08 15:49:07,207 subsystems 0/1 INFO :: Building subproblem matrices 2460/4096 (~60%) Elapsed: 12m 31s, Remaining: 8m 20s, Rate: 3.3e+00/s
+2026-07-08 15:49:16,196 subsystems 0/1 INFO :: Building subproblem matrices 2490/4096 (~61%) Elapsed: 12m 40s, Remaining: 8m 10s, Rate: 3.3e+00/s
+2026-07-08 15:49:26,026 subsystems 0/1 INFO :: Building subproblem matrices 2522/4096 (~62%) Elapsed: 12m 50s, Remaining: 8m 01s, Rate: 3.3e+00/s
+2026-07-08 15:49:36,085 subsystems 0/1 INFO :: Building subproblem matrices 2554/4096 (~62%) Elapsed: 13m 00s, Remaining: 7m 51s, Rate: 3.3e+00/s
+2026-07-08 15:49:46,147 subsystems 0/1 INFO :: Building subproblem matrices 2587/4096 (~63%) Elapsed: 13m 10s, Remaining: 7m 41s, Rate: 3.3e+00/s
+2026-07-08 15:49:56,128 subsystems 0/1 INFO :: Building subproblem matrices 2616/4096 (~64%) Elapsed: 13m 20s, Remaining: 7m 33s, Rate: 3.3e+00/s
+2026-07-08 15:50:06,148 subsystems 0/1 INFO :: Building subproblem matrices 2648/4096 (~65%) Elapsed: 13m 30s, Remaining: 7m 23s, Rate: 3.3e+00/s
+2026-07-08 15:50:16,227 subsystems 0/1 INFO :: Building subproblem matrices 2682/4096 (~65%) Elapsed: 13m 40s, Remaining: 7m 12s, Rate: 3.3e+00/s
+2026-07-08 15:50:26,119 subsystems 0/1 INFO :: Building subproblem matrices 2715/4096 (~66%) Elapsed: 13m 50s, Remaining: 7m 02s, Rate: 3.3e+00/s
+2026-07-08 15:50:36,068 subsystems 0/1 INFO :: Building subproblem matrices 2749/4096 (~67%) Elapsed: 14m 00s, Remaining: 6m 52s, Rate: 3.3e+00/s
+2026-07-08 15:50:46,205 subsystems 0/1 INFO :: Building subproblem matrices 2782/4096 (~68%) Elapsed: 14m 10s, Remaining: 6m 42s, Rate: 3.3e+00/s
+2026-07-08 15:50:56,211 subsystems 0/1 INFO :: Building subproblem matrices 2815/4096 (~69%) Elapsed: 14m 20s, Remaining: 6m 31s, Rate: 3.3e+00/s
+2026-07-08 15:51:06,014 subsystems 0/1 INFO :: Building subproblem matrices 2846/4096 (~69%) Elapsed: 14m 30s, Remaining: 6m 22s, Rate: 3.3e+00/s
+2026-07-08 15:51:13,609 subsystems 0/1 INFO :: Building subproblem matrices 2870/4096 (~70%) Elapsed: 14m 38s, Remaining: 6m 15s, Rate: 3.3e+00/s
+2026-07-08 15:51:16,209 subsystems 0/1 INFO :: Building subproblem matrices 2878/4096 (~70%) Elapsed: 14m 40s, Remaining: 6m 13s, Rate: 3.3e+00/s
+2026-07-08 15:51:26,100 subsystems 0/1 INFO :: Building subproblem matrices 2911/4096 (~71%) Elapsed: 14m 50s, Remaining: 6m 02s, Rate: 3.3e+00/s
+2026-07-08 15:51:36,000 subsystems 0/1 INFO :: Building subproblem matrices 2944/4096 (~72%) Elapsed: 15m 00s, Remaining: 5m 52s, Rate: 3.3e+00/s
+2026-07-08 15:51:46,193 subsystems 0/1 INFO :: Building subproblem matrices 2978/4096 (~73%) Elapsed: 15m 10s, Remaining: 5m 42s, Rate: 3.3e+00/s
+2026-07-08 15:51:56,091 subsystems 0/1 INFO :: Building subproblem matrices 3011/4096 (~74%) Elapsed: 15m 20s, Remaining: 5m 32s, Rate: 3.3e+00/s
+2026-07-08 15:52:06,028 subsystems 0/1 INFO :: Building subproblem matrices 3044/4096 (~74%) Elapsed: 15m 30s, Remaining: 5m 21s, Rate: 3.3e+00/s
+2026-07-08 15:52:16,237 subsystems 0/1 INFO :: Building subproblem matrices 3078/4096 (~75%) Elapsed: 15m 40s, Remaining: 5m 11s, Rate: 3.3e+00/s
+2026-07-08 15:52:26,164 subsystems 0/1 INFO :: Building subproblem matrices 3111/4096 (~76%) Elapsed: 15m 50s, Remaining: 5m 01s, Rate: 3.3e+00/s
+2026-07-08 15:52:36,085 subsystems 0/1 INFO :: Building subproblem matrices 3144/4096 (~77%) Elapsed: 16m 00s, Remaining: 4m 51s, Rate: 3.3e+00/s
+2026-07-08 15:52:46,028 subsystems 0/1 INFO :: Building subproblem matrices 3177/4096 (~78%) Elapsed: 16m 10s, Remaining: 4m 41s, Rate: 3.3e+00/s
+2026-07-08 15:52:56,215 subsystems 0/1 INFO :: Building subproblem matrices 3211/4096 (~78%) Elapsed: 16m 20s, Remaining: 4m 30s, Rate: 3.3e+00/s
+2026-07-08 15:53:06,134 subsystems 0/1 INFO :: Building subproblem matrices 3244/4096 (~79%) Elapsed: 16m 30s, Remaining: 4m 20s, Rate: 3.3e+00/s
+2026-07-08 15:53:16,041 subsystems 0/1 INFO :: Building subproblem matrices 3277/4096 (~80%) Elapsed: 16m 40s, Remaining: 4m 10s, Rate: 3.3e+00/s
+2026-07-08 15:53:16,944 subsystems 0/1 INFO :: Building subproblem matrices 3280/4096 (~80%) Elapsed: 16m 41s, Remaining: 4m 09s, Rate: 3.3e+00/s
+2026-07-08 15:53:26,065 subsystems 0/1 INFO :: Building subproblem matrices 3307/4096 (~81%) Elapsed: 16m 50s, Remaining: 4m 01s, Rate: 3.3e+00/s
+2026-07-08 15:53:36,244 subsystems 0/1 INFO :: Building subproblem matrices 3341/4096 (~82%) Elapsed: 17m 00s, Remaining: 3m 51s, Rate: 3.3e+00/s
+2026-07-08 15:53:46,154 subsystems 0/1 INFO :: Building subproblem matrices 3374/4096 (~82%) Elapsed: 17m 10s, Remaining: 3m 40s, Rate: 3.3e+00/s
+2026-07-08 15:53:56,044 subsystems 0/1 INFO :: Building subproblem matrices 3407/4096 (~83%) Elapsed: 17m 20s, Remaining: 3m 30s, Rate: 3.3e+00/s
+2026-07-08 15:54:06,259 subsystems 0/1 INFO :: Building subproblem matrices 3441/4096 (~84%) Elapsed: 17m 30s, Remaining: 3m 20s, Rate: 3.3e+00/s
+2026-07-08 15:54:16,156 subsystems 0/1 INFO :: Building subproblem matrices 3474/4096 (~85%) Elapsed: 17m 40s, Remaining: 3m 10s, Rate: 3.3e+00/s
+2026-07-08 15:54:26,037 subsystems 0/1 INFO :: Building subproblem matrices 3507/4096 (~86%) Elapsed: 17m 50s, Remaining: 3m 00s, Rate: 3.3e+00/s
+2026-07-08 15:54:36,228 subsystems 0/1 INFO :: Building subproblem matrices 3541/4096 (~86%) Elapsed: 18m 00s, Remaining: 2m 49s, Rate: 3.3e+00/s
+2026-07-08 15:54:46,126 subsystems 0/1 INFO :: Building subproblem matrices 3574/4096 (~87%) Elapsed: 18m 10s, Remaining: 2m 39s, Rate: 3.3e+00/s
+2026-07-08 15:54:56,049 subsystems 0/1 INFO :: Building subproblem matrices 3607/4096 (~88%) Elapsed: 18m 20s, Remaining: 2m 29s, Rate: 3.3e+00/s
+2026-07-08 15:55:05,969 subsystems 0/1 INFO :: Building subproblem matrices 3640/4096 (~89%) Elapsed: 18m 30s, Remaining: 2m 19s, Rate: 3.3e+00/s
+2026-07-08 15:55:16,165 subsystems 0/1 INFO :: Building subproblem matrices 3674/4096 (~90%) Elapsed: 18m 40s, Remaining: 2m 09s, Rate: 3.3e+00/s
+2026-07-08 15:55:20,976 subsystems 0/1 INFO :: Building subproblem matrices 3690/4096 (~90%) Elapsed: 18m 45s, Remaining: 2m 04s, Rate: 3.3e+00/s
+2026-07-08 15:55:26,089 subsystems 0/1 INFO :: Building subproblem matrices 3707/4096 (~91%) Elapsed: 18m 50s, Remaining: 1m 59s, Rate: 3.3e+00/s
+2026-07-08 15:55:36,010 subsystems 0/1 INFO :: Building subproblem matrices 3740/4096 (~91%) Elapsed: 19m 00s, Remaining: 1m 49s, Rate: 3.3e+00/s
+2026-07-08 15:55:46,229 subsystems 0/1 INFO :: Building subproblem matrices 3774/4096 (~92%) Elapsed: 19m 10s, Remaining: 1m 38s, Rate: 3.3e+00/s
+2026-07-08 15:55:56,135 subsystems 0/1 INFO :: Building subproblem matrices 3807/4096 (~93%) Elapsed: 19m 20s, Remaining: 1m 28s, Rate: 3.3e+00/s
+2026-07-08 15:56:06,071 subsystems 0/1 INFO :: Building subproblem matrices 3840/4096 (~94%) Elapsed: 19m 30s, Remaining: 1m 18s, Rate: 3.3e+00/s
+2026-07-08 15:56:15,977 subsystems 0/1 INFO :: Building subproblem matrices 3873/4096 (~95%) Elapsed: 19m 40s, Remaining: 1m 08s, Rate: 3.3e+00/s
+2026-07-08 15:56:26,160 subsystems 0/1 INFO :: Building subproblem matrices 3907/4096 (~95%) Elapsed: 19m 50s, Remaining: 58s, Rate: 3.3e+00/s
+2026-07-08 15:56:36,055 subsystems 0/1 INFO :: Building subproblem matrices 3940/4096 (~96%) Elapsed: 20m 00s, Remaining: 48s, Rate: 3.3e+00/s
+2026-07-08 15:56:46,251 subsystems 0/1 INFO :: Building subproblem matrices 3974/4096 (~97%) Elapsed: 20m 10s, Remaining: 37s, Rate: 3.3e+00/s
+2026-07-08 15:56:56,150 subsystems 0/1 INFO :: Building subproblem matrices 4007/4096 (~98%) Elapsed: 20m 20s, Remaining: 27s, Rate: 3.3e+00/s
+2026-07-08 15:57:06,053 subsystems 0/1 INFO :: Building subproblem matrices 4040/4096 (~99%) Elapsed: 20m 30s, Remaining: 17s, Rate: 3.3e+00/s
+2026-07-08 15:57:15,970 subsystems 0/1 INFO :: Building subproblem matrices 4073/4096 (~99%) Elapsed: 20m 40s, Remaining: 7s, Rate: 3.3e+00/s
+2026-07-08 15:57:22,892 subsystems 0/1 INFO :: Building subproblem matrices 4096/4096 (~100%) Elapsed: 20m 47s, Remaining: 0s, Rate: 3.3e+00/s
+2026-07-08 15:57:23,224 __main__ 0/1 INFO :: Starting main loop
+2026-07-08 15:57:50,650 __main__ 0/1 ERROR :: Exception raised, triggering end of main loop.
+2026-07-08 15:57:50,650 solvers 0/1 INFO :: Final iteration: 0
+2026-07-08 15:57:50,650 solvers 0/1 INFO :: Final sim time: 0.0
+2026-07-08 15:57:50,650 solvers 0/1 INFO :: Setup time (init - iter 0): 1250 sec
+2026-07-08 15:57:50,650 solvers 0/1 INFO :: Timings unavailable because warmup did not complete.

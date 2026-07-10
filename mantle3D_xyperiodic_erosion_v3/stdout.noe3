@@ -1,0 +1,20 @@
+run begins at: Fri Jul 10 15:46:35 EDT 2026
+Directory: /home/dabdulah/fs06/d0/dabdulah/GFD_PROJECT/crust_convection/mantle3D_xyperiodic_erosion_v3
+Your job is running on node(s):
+c064
+Cores per node:
+32
+list of loaded modules:
+ 
+2026-07-10 15:46:41,992 subsystems 0/1 INFO :: Building subproblem matrices 1/4096 (~0%) Elapsed: 1s, Remaining: 41m 04s, Rate: 1.7e+00/s
+2026-07-10 15:46:51,404 subsystems 0/1 INFO :: Building subproblem matrices 33/4096 (~1%) Elapsed: 10s, Remaining: 20m 33s, Rate: 3.3e+00/s
+2026-07-10 15:47:01,661 subsystems 0/1 INFO :: Building subproblem matrices 68/4096 (~2%) Elapsed: 20s, Remaining: 20m 01s, Rate: 3.4e+00/s
+2026-07-10 15:47:11,479 subsystems 0/1 INFO :: Building subproblem matrices 101/4096 (~2%) Elapsed: 30s, Remaining: 19m 50s, Rate: 3.4e+00/s
+2026-07-10 15:47:21,544 subsystems 0/1 INFO :: Building subproblem matrices 135/4096 (~3%) Elapsed: 40s, Remaining: 19m 38s, Rate: 3.4e+00/s
+2026-07-10 15:47:31,415 subsystems 0/1 INFO :: Building subproblem matrices 168/4096 (~4%) Elapsed: 50s, Remaining: 19m 30s, Rate: 3.4e+00/s
+2026-07-10 15:47:41,554 subsystems 0/1 INFO :: Building subproblem matrices 202/4096 (~5%) Elapsed: 1m 00s, Remaining: 19m 20s, Rate: 3.4e+00/s
+2026-07-10 15:47:51,629 subsystems 0/1 INFO :: Building subproblem matrices 236/4096 (~6%) Elapsed: 1m 10s, Remaining: 19m 09s, Rate: 3.4e+00/s
+2026-07-10 15:48:01,685 subsystems 0/1 INFO :: Building subproblem matrices 270/4096 (~7%) Elapsed: 1m 20s, Remaining: 18m 58s, Rate: 3.4e+00/s
+2026-07-10 15:48:11,590 subsystems 0/1 INFO :: Building subproblem matrices 303/4096 (~7%) Elapsed: 1m 30s, Remaining: 18m 49s, Rate: 3.4e+00/s
+2026-07-10 15:48:21,669 subsystems 0/1 INFO :: Building subproblem matrices 337/4096 (~8%) Elapsed: 1m 40s, Remaining: 18m 39s, Rate: 3.4e+00/s
+2026-07-10 15:48:31,457 subsystems 0/1 INFO :: Building subproblem matrices 370/4096 (~9%) Elapsed: 1m 50s, Remaining: 18m 28s, Rate: 3.4e+00/s

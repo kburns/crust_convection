@@ -1,0 +1,5 @@
+Currently Loaded Modulefiles:
+  1) slurm/20161123      2) anaconda3/2020.11
+/home/dabdulah/.conda/envs/dedalus-test/lib/python3.11/site-packages/dedalus/core/operators.py:387: RuntimeWarning: overflow encountered in power
+  np.power(arg0.data, arg1, out.data)
+slurmstepd: error: *** JOB 534740 ON c061 CANCELLED AT 2026-07-07T22:42:28 ***

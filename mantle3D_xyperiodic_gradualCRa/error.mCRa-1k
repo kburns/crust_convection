@@ -1,0 +1,3 @@
+Currently Loaded Modulefiles:
+  1) slurm/20161123      2) anaconda3/2020.11
+slurmstepd: error: *** JOB 534563 ON c065 CANCELLED AT 2026-07-07T18:27:15 ***

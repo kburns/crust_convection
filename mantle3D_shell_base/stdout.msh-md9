@@ -526,3 +526,25 @@ list of loaded modules:
 2026-07-06 09:56:39,047 __main__ 0/1 INFO :: Iteration=4531, Time=2.263707e+00, dt=2.415624e-03, max(KE)=4.137767
 2026-07-06 09:57:43,919 __main__ 0/1 INFO :: Iteration=4541, Time=2.286865e+00, dt=2.538399e-03, max(KE)=4.128277
 2026-07-06 09:58:49,016 __main__ 0/1 INFO :: Iteration=4551, Time=2.309343e+00, dt=2.171169e-03, max(KE)=3.905965
+2026-07-06 09:59:53,268 __main__ 0/1 INFO :: Iteration=4561, Time=2.333017e+00, dt=2.102305e-03, max(KE)=4.184256
+2026-07-06 10:00:57,008 __main__ 0/1 INFO :: Iteration=4571, Time=2.355818e+00, dt=2.399858e-03, max(KE)=3.528178
+2026-07-06 10:02:00,079 __main__ 0/1 INFO :: Iteration=4581, Time=2.381010e+00, dt=2.375302e-03, max(KE)=4.327790
+2026-07-06 10:03:03,682 __main__ 0/1 INFO :: Iteration=4591, Time=2.405105e+00, dt=2.307917e-03, max(KE)=3.764280
+2026-07-06 10:04:13,483 __main__ 0/1 INFO :: Iteration=4601, Time=2.428362e+00, dt=2.360799e-03, max(KE)=4.337502
+2026-07-06 10:05:22,020 __main__ 0/1 INFO :: Iteration=4611, Time=2.450726e+00, dt=2.222551e-03, max(KE)=5.215812
+2026-07-06 10:06:26,830 __main__ 0/1 INFO :: Iteration=4621, Time=2.472633e+00, dt=2.438114e-03, max(KE)=3.788126
+2026-07-06 10:07:31,672 __main__ 0/1 INFO :: Iteration=4631, Time=2.496170e+00, dt=2.402086e-03, max(KE)=4.433654
+2026-07-06 10:08:37,196 __main__ 0/1 INFO :: Iteration=4641, Time=2.519309e+00, dt=2.225790e-03, max(KE)=4.022589
+2026-07-06 10:09:41,923 __main__ 0/1 INFO :: Iteration=4651, Time=2.542332e+00, dt=2.195482e-03, max(KE)=3.951179
+2026-07-06 10:10:46,927 __main__ 0/1 INFO :: Iteration=4661, Time=2.564820e+00, dt=2.196814e-03, max(KE)=5.046443
+2026-07-06 10:11:51,518 __main__ 0/1 INFO :: Iteration=4671, Time=2.585907e+00, dt=2.139839e-03, max(KE)=3.880555
+2026-07-06 10:12:56,851 __main__ 0/1 INFO :: Iteration=4681, Time=2.608517e+00, dt=2.448872e-03, max(KE)=4.400424
+2026-07-06 10:14:01,662 __main__ 0/1 INFO :: Iteration=4691, Time=2.631823e+00, dt=2.400917e-03, max(KE)=3.873373
+2026-07-06 10:15:08,949 __main__ 0/1 ERROR :: Exception raised, triggering end of main loop.
+2026-07-06 10:15:08,949 solvers 0/1 INFO :: Final iteration: 4700
+2026-07-06 10:15:08,949 solvers 0/1 INFO :: Final sim time: 2.6534313921369312
+2026-07-06 10:15:08,949 solvers 0/1 INFO :: Setup time (init - iter 0): 583 sec
+2026-07-06 10:15:08,949 solvers 0/1 INFO :: Warmup time (iter 0-10): 1490 sec
+2026-07-06 10:15:08,949 solvers 0/1 INFO :: Run time (iter 10-end): 3.119e+04 sec
+2026-07-06 10:15:08,950 solvers 0/1 INFO :: CPU time (iter 10-end): 8.663 cpu-hr
+2026-07-06 10:15:08,950 solvers 0/1 INFO :: Speed: 9.631e+05 mode-stages/cpu-sec

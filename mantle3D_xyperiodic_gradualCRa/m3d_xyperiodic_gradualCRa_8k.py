@@ -93,36 +93,36 @@ solver.stop_sim_time = stop_sim_time
 # Initial conditions
 if not restart:
     file_handler_mode = 'overwrite'
-    initial_timestep = 1e-4
+    initial_timestep = max_timestep
     T.fill_random('g', seed=42, distribution='normal', scale=1e-3) # Random noise
     T['g'] *= z * (Lz - z) # Damp noise at walls
     T['g'] += 1 - z/Lz # Add linear background
     C['g'] = 1
-    C['g'][..., -1] = 0
+  #  C['g'][..., -1] = 0
 else:
     file_handler_mode = 'append'
-    write, initial_timestep = solver.load_state('checkpoints_CRa8k/checkpoints_CRa8k_s1.h5')
+    write, initial_timestep = solver.load_state('checkpoints_8k/checkpoints_8k_s1.h5')
 
 # Analysis
-snapshots = solver.evaluator.add_file_handler('snapshots_CRa8k', iter=100, max_writes=10)
+snapshots = solver.evaluator.add_file_handler('snapshots_8k', iter=100, max_writes=10, mode=file_handler_mode)
 snapshots.add_task(T, name='T')
 snapshots.add_task(C, name='C')
 snapshots.add_task(ez @ u, name='w')
 snapshots.add_task(ex @ d3.curl(u), name='vorticity_x')
 snapshots.add_task(ey @ d3.curl(u), name='vorticity_y')
 snapshots.add_task(ez @ d3.curl(u), name='vorticity_z')
+snapshots.add_task((ez @ u)*T, name='convective_heat_flux')
 
 # Horizontally averaged nonlinear diagnostics
-snapshots_nonlinear = solver.evaluator.add_file_handler('snapshots_nonlinear_CRa8k', iter=10, max_writes=200)
+snapshots_nonlinear = solver.evaluator.add_file_handler('snapshots_nonlinear_8k', iter=10, max_writes=200, mode=file_handler_mode)
 snapshots_nonlinear.add_task(d3.Average((ez @ u)*T, ('x', 'y')), name='convective_heat_flux_z')
-snapshots_nonlinear.add_task(d3.Average((u@u)/2, ('x', 'y', 'z')), name='KE_avg')
 
 # Checkpoints
-checkpoints = solver.evaluator.add_file_handler('checkpoints_CRa8k', sim_dt=0.1, max_writes=1, mode=file_handler_mode)
+checkpoints = solver.evaluator.add_file_handler('checkpoints_8k', sim_dt=max_timestep*1000, max_writes=1, mode=file_handler_mode)
 checkpoints.add_tasks(solver.state)
 
 # CFL
-CFL = d3.CFL(solver, initial_dt=initial_timestep, cadence=1, safety=0.25, threshold=0.05,
+CFL = d3.CFL(solver, initial_dt=max_timestep, cadence=1, safety=0.25, threshold=0.05,
              max_change=1.5, min_change=0.5, max_dt=max_timestep)
 CFL.add_velocity(u)
 

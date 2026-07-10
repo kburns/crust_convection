@@ -8,14 +8,23 @@ logger = logging.getLogger(__name__)
 Lx, Ly, Lz = 4, 4, 1
 Nx, Ny, Nz = 128, 128, 64
 RaT = 1e4
-RaC = 1.1e4
-Le = 100
+RaC = 2.2e4
+Le = 100 
 h = 0
-E = 0
-γ = 0
+E = 4
+γ = 10
+
+air_erosion = 1.015e-14 # m/s
+rain_erosion = 2.12e-12 # m/s
+D_scale = 3e6           # m
+kappa_scale = 1e-6      # m^2/s
+
+Kh = 0 # air_erosion*D_scale**2/kappa_scale
+Kc = 0 # air_erosion/kappa_scale
+Ks = 0 # rain_erosion*D_scale/kappa_scale
 dealias = 3/2
 timestepper = d3.RK222
-max_timestep = 2e-2
+max_timestep = 1e-3
 stop_sim_time = max_timestep*1e4
 dtype = np.float64
 restart=0
@@ -50,6 +59,9 @@ lift = lambda A: d3.Lift(A, lift_basis, -1)
 grad_T = d3.grad(T) + ez*lift(tau_T1) # First-order reduction
 grad_C = d3.grad(C) + ez*lift(tau_C1) # First-order reduction
 grad_u = d3.grad(u) + ez*lift(tau_u1) # First-order reduction
+dx = lambda A: d3.Differentiate(A, coords['x'])
+dy = lambda A: d3.Differentiate(A, coords['y'])
+lap_s = lambda A: dx(dx(A)) + dy(dy(A))
 
 # Problem
 # First-order form: "div(f)" becomes "trace(grad_f)"
@@ -71,9 +83,29 @@ problem.add_equation("T(z=Lz) = 0")
 # BC: continents on top
 problem.add_equation("C(z=0) = 1")
 problem.add_equation("C(z=Lz) = 0")
-# BC: rigid lid, rigid bottom
+# BC: rigid bottom
 problem.add_equation("ez@u(z=0) = 0")
-problem.add_equation("ez@u(z=Lz) = 0")
+
+# BC: hydrostatic surface
+p_top = p(z=Lz)
+
+px_top = dx(p)(z=Lz)
+py_top = dy(p)(z=Lz)
+
+lap_p_top = lap_s(p)(z=Lz)
+slope2_top = px_top**2 + py_top**2
+
+mean_ph = d3.Average(p_top, (coords['x'], coords['y']))
+mean_ps = d3.Average(slope2_top, (coords['x'], coords['y']))
+
+problem.add_equation(
+    "ez@u(z=Lz) "
+    "+ Kh*p_top "
+    "+ Kc*lap_p_top "
+    "= Kh*mean_ph "
+    "- Ks*(slope2_top - mean_ps)"
+)
+
 # BC: stress free top, bottom
 problem.add_equation("(ez@grad(u)@ex)(z=0) = 0")
 problem.add_equation("(ez@grad(u)@ex)(z=Lz) = 0")
@@ -93,7 +125,7 @@ solver.stop_sim_time = stop_sim_time
 # Initial conditions
 if not restart:
     file_handler_mode = 'overwrite'
-    initial_timestep = 1e-4
+    initial_timestep = max_timestep
     T.fill_random('g', seed=42, distribution='normal', scale=1e-3) # Random noise
     T['g'] *= z * (Lz - z) # Damp noise at walls
     T['g'] += 1 - z/Lz # Add linear background
@@ -101,28 +133,29 @@ if not restart:
     C['g'][..., -1] = 0
 else:
     file_handler_mode = 'append'
-    write, initial_timestep = solver.load_state('checkpoints_CRa11k/checkpoints_CRa11k_s1.h5')
+    write, initial_timestep = solver.load_state('checkpoints_noerosion/checkpoints_noerosion_s2.h5')
 
 # Analysis
-snapshots = solver.evaluator.add_file_handler('snapshots_CRa11k', iter=100, max_writes=10)
+snapshots = solver.evaluator.add_file_handler('snapshots_noerosion/', iter=100, max_writes=10)
 snapshots.add_task(T, name='T')
 snapshots.add_task(C, name='C')
 snapshots.add_task(ez @ u, name='w')
 snapshots.add_task(ex @ d3.curl(u), name='vorticity_x')
 snapshots.add_task(ey @ d3.curl(u), name='vorticity_y')
 snapshots.add_task(ez @ d3.curl(u), name='vorticity_z')
+snapshots.add_task(p, name='p')
 
 # Horizontally averaged nonlinear diagnostics
-snapshots_nonlinear = solver.evaluator.add_file_handler('snapshots_nonlinear_CRa11k', iter=10, max_writes=200)
+snapshots_nonlinear = solver.evaluator.add_file_handler('snapshots_nonlinear_noerosion/', iter=10, max_writes=200)
 snapshots_nonlinear.add_task(d3.Average((ez @ u)*T, ('x', 'y')), name='convective_heat_flux_z')
 snapshots_nonlinear.add_task(d3.Average((u@u)/2, ('x', 'y', 'z')), name='KE_avg')
 
 # Checkpoints
-checkpoints = solver.evaluator.add_file_handler('checkpoints_CRa11k', sim_dt=0.1, max_writes=1, mode=file_handler_mode)
+checkpoints = solver.evaluator.add_file_handler('checkpoints_noerosion/', sim_dt=1, max_writes=1, mode=file_handler_mode)
 checkpoints.add_tasks(solver.state)
 
 # CFL
-CFL = d3.CFL(solver, initial_dt=initial_timestep, cadence=1, safety=0.25, threshold=0.05,
+CFL = d3.CFL(solver, initial_dt=max_timestep, cadence=1, safety=0.25, threshold=0.05,
              max_change=1.5, min_change=0.5, max_dt=max_timestep)
 CFL.add_velocity(u)
 

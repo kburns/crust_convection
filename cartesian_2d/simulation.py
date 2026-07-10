@@ -1,5 +1,3 @@
-,
-
 import numpy as np
 import dedalus.public as d3
 import logging

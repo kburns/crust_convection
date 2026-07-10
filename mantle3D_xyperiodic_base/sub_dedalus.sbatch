@@ -1,5 +1,5 @@
 #!/bin/bash 
-#SBATCH -J m3d-nc
+#SBATCH -J m3d-c8
 #SBATCH -t 48:00:00
 ## SBATCH --mem-per-cpu 4000
 #SBATCH -N 1 -n 32 --mem=0 -p edr

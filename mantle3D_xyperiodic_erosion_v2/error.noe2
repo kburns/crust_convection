@@ -1,0 +1,17 @@
+Currently Loaded Modulefiles:
+  1) slurm/20161123      2) anaconda3/2020.11
+Traceback (most recent call last):
+  File "/net/fs06/d0/dabdulah/GFD_PROJECT/crust_convection/mantle3D_xyperiodic_erosion_v2/m3d_xyperiodic_erosion_v2_noerosion.py", line 184, in <module>
+    solver.step(timestep)
+  File "/home/dabdulah/.conda/envs/dedalus-test/lib/python3.11/site-packages/dedalus/core/solvers.py", line 620, in step
+    self.timestepper.step(dt, wall_elapsed)
+  File "/home/dabdulah/.conda/envs/dedalus-test/lib/python3.11/site-packages/dedalus/core/timesteppers.py", line 626, in step
+    sp.LHS_solvers[i] = solver.matsolver(sp.LHS, solver)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dabdulah/.conda/envs/dedalus-test/lib/python3.11/site-packages/dedalus/libraries/matsolvers.py", line 129, in __init__
+    self.LU = spla.splu(matrix.T.tocsc(), permc_spec='NATURAL')
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dabdulah/.conda/envs/dedalus-test/lib/python3.11/site-packages/scipy/sparse/linalg/_dsolve/linsolve.py", line 413, in splu
+    return _superlu.gstrf(N, A.nnz, A.data, A.indices, A.indptr,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Factor is exactly singular
